@@ -1,0 +1,68 @@
+$primary-color: #272727;
+$secondary-color: #eee;
+$color-grey: #363535;
+$color-light-grey:#4e4c4c;
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+
+  }
+
+  html{
+    font-size: 62.5%;
+  }
+
+  body{
+    background-color: $primary-color;
+    // height: 100vh;
+    color: $secondary-color;
+    font-family: sans-serif;
+    font-size: 1.7rem;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+.align{
+  max-width: 1100px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+@mixin transition-ease {
+  transition: all 0.5s ease-in-out; /*to be reused that is why it is all*/
+}
+
+@function set-text-color($color) {
+  @if (lightness($color) > 40%) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+
+// Managing all our breakpoints in this map
+
+$bp : (
+  mobile : 480px,
+  tablet : 768px,
+  desktop : 1440px,
+);
+
+// Conditional Media query Mixins
+// To save time 
+
+//desktop first (for nav at least)
+
+@mixin query($screen){
+  @each $key, $value in $bp{
+    @if ($screen == $key){
+      @media (max-width : $value){@content;}
+    }
+  }
+}

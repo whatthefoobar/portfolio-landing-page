@@ -1,0 +1,261 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #272727;
+  color: #eee;
+  font-family: sans-serif;
+  font-size: 1.7rem;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.align {
+  max-width: 1100px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.tabcontent-home {
+  display: block;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  color: white;
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  color: pink;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  text-decoration: underline;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  border-top: none;
+}
+
+.tabcontent-home {
+  display: block;
+}
+
+.two, .three, .four {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 400px;
+  padding: 100px 20vh;
+  border: none;
+}
+
+.grey {
+  background-color: #363535;
+}
+
+.lighter-grey {
+  background-color: #4e4c4c;
+}
+
+.wave1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.wave1 svg {
+  position: relative;
+  display: block;
+  width: calc(104% + 1.3px);
+  height: 43px;
+}
+
+.wave1 .shape-fill {
+  fill: #272727;
+}
+
+.wave2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.wave2 svg {
+  position: relative;
+  display: block;
+  width: calc(104% + 1.3px);
+  height: 62px;
+}
+
+.wave2 .shape-fill {
+  fill: #4e4c4c;
+}
+
+.wave3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave3 svg {
+  position: relative;
+  display: block;
+  width: calc(104% + 1.3px);
+  height: 44px;
+}
+
+.wave3 .shape-fill {
+  fill: #363535;
+}
+
+.main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 2vw;
+  padding-bottom: 7vw;
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 0 6rem;
+  }
+}
+
+.main-intro {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media (max-width: 768px) {
+  .main-intro {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+.main-intro__text {
+  -ms-flex-preferred-size: 55%;
+      flex-basis: 55%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15rem 2rem;
+  position: relative;
+}
+
+.main-intro__text .highlight {
+  font-size: 2.5rem;
+  text-indent: 2rem;
+  position: relative;
+  left: 300px;
+}
+
+.main-intro__text .line-separator {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  height: 3px;
+  width: 35%;
+  background: pink;
+  border-bottom: 1px solid #313030;
+}
+
+.main-intro__text p {
+  font-size: 1.4rem;
+  font-weight: 100;
+  letter-spacing: 3px;
+}
+
+.main-intro__text .social-media {
+  margin-top: 2rem;
+}
+
+.main-intro__text .social-media .bx {
+  padding-right: 6px;
+}
+
+@media (max-width: 768px) {
+  .main-intro__text {
+    padding: 10rem 1rem;
+  }
+}
+
+.main-intro__image {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  padding: 15rem;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../img/portfolio-img-small.jpg") center top;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/portfolio-img-small.jpg") center top;
+  background-size: cover;
+  background-position: center;
+}
+/*# sourceMappingURL=main.css.map */
