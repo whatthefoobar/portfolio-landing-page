@@ -13,6 +13,7 @@
   min-height: 400px;
   padding: 100px 20vh;
   border: none;
+  margin-top: 5vh;
 }
 .grey{
   background-color:$color-grey;
@@ -57,7 +58,7 @@
     height: 62px;
   }
   & .shape-fill {
-    fill: $color-light-grey;
+    fill:$primary-color;
   }
 }
 
@@ -78,7 +79,7 @@
   }
 
   & .shape-fill {
-    fill: #363535;
+    fill:$primary-color;
   }
 }
 
