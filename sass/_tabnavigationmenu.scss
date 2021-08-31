@@ -13,7 +13,7 @@
 
 /* Style the buttons inside the tab */
 .tab button {
-  color:white;
+  color:$secondary-color;
   background-color: inherit;
   float: left;
   border: none;
@@ -26,7 +26,7 @@
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  color: pink
+  color: $accent-color;
 }
 
 /* Create an active/current tablink class */

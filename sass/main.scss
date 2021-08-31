@@ -66,28 +66,6 @@
   }
 }
 
-// .wave3 {
-//   position: absolute;
-//   bottom: 0;
-//   left: 0;
-//   width: 100%;
-//   overflow: hidden;
-//   line-height: 0;
-  
-
-//   & svg {
-//     position: relative;
-//     display: block;
-//     width: calc(104% + 1.3px);
-//     height: 44px;
-//   }
-
-//   & .shape-fill {
-//     fill:$primary-color;
-//   }
-// }
-
-
 .main{
   width: 100%;
   // height: 35vw;
@@ -133,7 +111,7 @@
         margin-bottom: 1.5rem;
         height:3px;
         width: 35%;
-        background:pink; 
+        background:$accent-color; 
         border-bottom:1px solid #313030;
         
       }
@@ -148,6 +126,10 @@
     
         .bx{
           padding-right: 6px;
+          color: $secondary-color;
+        }
+        .bx:hover{
+          color: $accent-color;// for testing
         }
       }
       
@@ -177,3 +159,27 @@
 
 
 
+
+
+
+
+// .wave3 {
+//   position: absolute;
+//   bottom: 0;
+//   left: 0;
+//   width: 100%;
+//   overflow: hidden;
+//   line-height: 0;
+  
+
+//   & svg {
+//     position: relative;
+//     display: block;
+//     width: calc(104% + 1.3px);
+//     height: 44px;
+//   }
+
+//   & .shape-fill {
+//     fill:$primary-color;
+//   }
+// }

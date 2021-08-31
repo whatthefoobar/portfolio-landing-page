@@ -222,6 +222,11 @@ body {
 
 .main-intro__text .social-media .bx {
   padding-right: 6px;
+  color: #eee;
+}
+
+.main-intro__text .social-media .bx:hover {
+  color: pink;
 }
 
 @media (max-width: 768px) {
