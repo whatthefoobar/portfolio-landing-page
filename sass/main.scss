@@ -62,26 +62,26 @@
   }
 }
 
-.wave3 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
+// .wave3 {
+//   position: absolute;
+//   bottom: 0;
+//   left: 0;
+//   width: 100%;
+//   overflow: hidden;
+//   line-height: 0;
   
 
-  & svg {
-    position: relative;
-    display: block;
-    width: calc(104% + 1.3px);
-    height: 44px;
-  }
+//   & svg {
+//     position: relative;
+//     display: block;
+//     width: calc(104% + 1.3px);
+//     height: 44px;
+//   }
 
-  & .shape-fill {
-    fill:$primary-color;
-  }
-}
+//   & .shape-fill {
+//     fill:$primary-color;
+//   }
+// }
 
 
 .main{

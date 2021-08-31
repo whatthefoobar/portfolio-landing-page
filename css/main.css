@@ -141,26 +141,6 @@ body {
   fill: #272727;
 }
 
-.wave3 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.wave3 svg {
-  position: relative;
-  display: block;
-  width: calc(104% + 1.3px);
-  height: 44px;
-}
-
-.wave3 .shape-fill {
-  fill: #272727;
-}
-
 .main {
   width: 100%;
   display: -webkit-box;
