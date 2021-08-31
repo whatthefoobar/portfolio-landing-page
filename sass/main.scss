@@ -9,18 +9,22 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  min-height: 400px;
-  padding: 100px 20vh;
+  align-items: flex-start;
+  min-height: 500px;
+  padding: 7rem 15vh;
   border: none;
   margin-top: 5vh;
+
+  h1{
+    padding: 2rem;
+  }
 }
 .grey{
   background-color:$color-grey;
 }
-.lighter-grey{
-  background-color: $color-light-grey;
-}
+// .lighter-grey{
+//   background-color: $color-light-grey;
+// }
 
 .wave1 {
   position: absolute;

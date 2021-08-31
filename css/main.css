@@ -80,21 +80,21 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  min-height: 400px;
-  padding: 100px 20vh;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  min-height: 500px;
+  padding: 7rem 15vh;
   border: none;
   margin-top: 5vh;
 }
 
-.grey {
-  background-color: #363535;
+.two h1, .three h1, .four h1 {
+  padding: 2rem;
 }
 
-.lighter-grey {
-  background-color: #4e4c4c;
+.grey {
+  background-color: #363535;
 }
 
 .wave1 {
