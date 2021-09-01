@@ -1,11 +1,12 @@
 @import "./config";
 @import "./tabnavigationmenu";
+@import "./about";
 
 .tabcontent-home{
   display: block;
 }
 
-.two, .three, .four {
+.three, .four {
   position: relative;
   display: flex;
   flex-direction: column;

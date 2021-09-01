@@ -22,7 +22,7 @@ body {
 }
 
 .align {
-  max-width: 1100px;
+  max-width: 900px;
   width: 85%;
   margin: 0 auto;
 }
@@ -39,7 +39,7 @@ body {
 
 /* Style the buttons inside the tab */
 .tab button {
-  color: white;
+  color: #eee;
   background-color: inherit;
   float: left;
   border: none;
@@ -67,11 +67,60 @@ body {
   border-top: none;
 }
 
+.about {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4rem;
+  min-height: 500px;
+  padding: 7rem 15vh;
+  border: none;
+  margin-top: 5vh;
+}
+
+.about__text {
+  margin-top: 3rem;
+}
+
+.about__skills {
+  margin-top: 3rem;
+}
+
+.about__skills .progress {
+  background-color: #d8d8d8;
+  border-radius: 20px;
+  height: 15px;
+  width: 400px;
+  margin: 10px 0;
+}
+
+.about__skills .progress-done {
+  background: -webkit-gradient(linear, right top, left top, from(#F2709C), to(#FF9472));
+  background: linear-gradient(to left, #F2709C, #FF9472);
+  border-radius: 20px;
+  color: #fff;
+  display: inline-block;
+  height: 100%;
+  width: 60%;
+  text-align: center;
+}
+
 .tabcontent-home {
   display: block;
 }
 
-.two, .three, .four {
+.three, .four {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -89,7 +138,7 @@ body {
   margin-top: 5vh;
 }
 
-.two h1, .three h1, .four h1 {
+.three h1, .four h1 {
   padding: 2rem;
 }
 
@@ -207,7 +256,6 @@ body {
   height: 3px;
   width: 35%;
   background: pink;
-  border-bottom: 1px solid #313030;
 }
 
 .main-intro__text p {

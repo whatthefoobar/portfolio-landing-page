@@ -13,3 +13,10 @@ function openTab(evt, tabName) {
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+//about page progress bar
+// const progress = document.querySelector('.progress-done');
+// setTimeout(() => {
+//   progress.style.width = progress.getAttribute('data-done') + '%';
+//   progress.style.opacity = 1;
+// },500)
+
