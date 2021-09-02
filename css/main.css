@@ -97,6 +97,10 @@ body {
   margin-top: 3rem;
 }
 
+.about__skills--title {
+  margin: 20px;
+}
+
 .about__skills .progress {
   background-color: #d8d8d8;
   border-radius: 20px;
@@ -111,9 +115,28 @@ body {
   border-radius: 20px;
   color: #fff;
   display: inline-block;
-  height: 100%;
-  width: 60%;
   text-align: center;
+  height: 100%;
+}
+
+.about__skills .p70 {
+  width: 70%;
+}
+
+.about__skills .p30 {
+  width: 30%;
+}
+
+.about__skills .p20 {
+  width: 20%;
+}
+
+.about__skills .p90 {
+  width: 90%;
+}
+
+.about__skills .p80 {
+  width: 80%;
 }
 
 .tabcontent-home {
