@@ -1,6 +1,8 @@
 @import "./config";
 @import "./tabnavigationmenu";
 @import "./about";
+@import "./projects";
+@import "./contact";
 
 .tabcontent-home{
   display: block;
@@ -8,9 +10,9 @@
 
 .three, .four {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: flex-start;
   min-height: 500px;
   padding: 7rem 15vh;
   border: none;
@@ -20,12 +22,6 @@
     padding: 2rem;
   }
 }
-.grey{
-  background-color:$color-grey;
-}
-// .lighter-grey{
-//   background-color: $color-light-grey;
-// }
 
 .wave1 {
   position: absolute;
