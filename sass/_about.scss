@@ -8,23 +8,43 @@
   gap: 4rem;
   // align-items: flex-start;
   min-height: 500px;
-  padding: 7rem 15vh;
+  padding: 7rem 0;
   border: none;
   margin-top: 5vh;
 
+  
+  &__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-flow: row wrap ;
+
+
+  }
  &__text{
   margin-top:3rem;
-  max-width:500px;
+  max-width: 500px;
+
+  &__title{
+    padding-bottom: 20px;
+    color: $accent-color;
+  }
+
+  
 }
+
  &__skills{
    display: flex;
    flex-direction: row;
    gap: 30px;
-  margin-top:3rem;
-  &--title{
-    margin:20px;
-  }
+   margin-top:3rem;
 
+  &__title{
+    padding-bottom: 20px;
+    color:$accent-color;
+    text-align: center;
+  }
   .progress {
     background-color:#d8d8d8;
     border-radius:20px;

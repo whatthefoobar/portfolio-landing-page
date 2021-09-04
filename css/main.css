@@ -86,14 +86,36 @@ body {
           align-items: center;
   gap: 4rem;
   min-height: 500px;
-  padding: 7rem 15vh;
+  padding: 7rem 0;
   border: none;
   margin-top: 5vh;
+}
+
+.about__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 }
 
 .about__text {
   margin-top: 3rem;
   max-width: 500px;
+}
+
+.about__text__title {
+  padding-bottom: 20px;
+  color: pink;
 }
 
 .about__skills {
@@ -108,8 +130,10 @@ body {
   margin-top: 3rem;
 }
 
-.about__skills--title {
-  margin: 20px;
+.about__skills__title {
+  padding-bottom: 20px;
+  color: pink;
+  text-align: center;
 }
 
 .about__skills .progress {
@@ -167,7 +191,7 @@ body {
           justify-content: center;
 }
 
-.container {
+.projects .container {
   position: relative;
   width: 1100px;
   display: -webkit-box;
@@ -184,7 +208,7 @@ body {
   padding: 30px;
 }
 
-.container .card {
+.projects .container .card {
   position: relative;
   max-width: 300px;
   height: 215px;
@@ -204,11 +228,19 @@ body {
   transition: 0.3s ease-in-out;
 }
 
-.container .card:hover {
+.projects .container .card:hover {
   height: 420px;
 }
 
-.container .card .imgBx {
+.projects .container .card:hover .content {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+.projects .container .card .imgBx {
   position: relative;
   width: 260px;
   /* height:260px; */
@@ -218,14 +250,14 @@ body {
   z-index: 1;
 }
 
-.container .card .imgBx img {
+.projects .container .card .imgBx img {
   max-width: 100%;
   -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
           box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
 
-.container .card .content {
+.projects .container .card .content {
   position: relative;
   margin-top: -140px;
   text-align: center;
@@ -234,14 +266,6 @@ body {
   opacity: 0;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
-}
-
-.container .card:hover .content {
-  visibility: visible;
-  opacity: 1;
-  margin-top: -40px;
-  -webkit-transition-delay: 0.3s;
-          transition-delay: 0.3s;
 }
 
 .contact {
