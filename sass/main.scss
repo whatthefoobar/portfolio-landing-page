@@ -64,15 +64,20 @@
 }
 
 .main{
-  width: 100%;
-  // height: 35vw;
+  max-width: 1100px;
+  width: 85%;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   margin-top: 2vw;
-  padding-bottom: 7vw;
+  // padding-bottom: 7vw;
 
   @include query(tablet){
-    padding: 0 6rem;
+    padding-left: 5rem;
+  }
+  @include query(mobile){
+    width: 100%;
+    padding-bottom: 0;
   }
   
 
@@ -80,39 +85,62 @@
     width: 100%;
     display: flex;
     flex-direction: row;
+    gap:4rem;
+
+    @include query(tablet){
+      gap: 2rem;
+    } 
   
   
     @include query(tablet){
     flex-direction: column-reverse;
     }
 
-  
+    @include query(mobile){
+      flex-direction: column-reverse;
+      gap:0;
+    }
+
     &__text{
       // border: 2px solid red;
       flex-basis: 55%;
       display: flex;
       justify-items: center;
       align-items: center;
-      padding: 15rem 2rem;
-      position: relative;
+      padding: 15rem 0;
 
-      .highlight{
+      @include query(tablet){
+        padding: 7rem 1rem;
+      } 
+
+      @include query(mobile){
+        padding: 5rem 1rem;
+      } 
+      .main__highlight{
         font-size: 2.5rem;
-        text-indent: 2rem;
-        position: relative;
-        left: 300px;
+        // text-indent: 1rem;
+
+        @include query(mobile){
+          font-size: 2.2rem;
+          font-weight: 400;
+          // text-indent: 0;
+        }
       }
       
       .line-separator{
         margin-top: 1.5rem;
         margin-bottom: 1.5rem;
         height:3px;
-        width: 35%;
+        width: 40%;
         background:$accent-color; 
         // border-bottom:1px solid #313030;// wtf did i put this for?
+
+        @include query(mobile){
+          width: 100%;
+        }
         
       }
-      p{
+      .main__description{
         font-size: 1.4rem;
         font-weight: 100;
         letter-spacing: 3px;
@@ -128,11 +156,7 @@
         .bx:hover{
           color: $accent-color;// for testing
         }
-      }
-      
-      @include query(tablet){
-        padding: 10rem 1rem;
-      }  
+      } 
       
     }
     &__image{
@@ -146,37 +170,9 @@
       url("../img/portfolio-img-small.jpg") center top;
       background-size: cover;
       background-position: center;
+
     }
   } 
 
   
 }
-
-
-
-
-
-
-
-
-
-// .wave3 {
-//   position: absolute;
-//   bottom: 0;
-//   left: 0;
-//   width: 100%;
-//   overflow: hidden;
-//   line-height: 0;
-  
-
-//   & svg {
-//     position: relative;
-//     display: block;
-//     width: calc(104% + 1.3px);
-//     height: 44px;
-//   }
-
-//   & .shape-fill {
-//     fill:$primary-color;
-//   }
-// }

@@ -54,34 +54,35 @@
         &-title{
             position: relative;
             width: max-content; /* dangerous with more than 1 line of text */
+            font-weight: 600;
 
             &::after{
                 box-sizing: border-box;
                 content: "";
                 position: absolute;
                 height: 4px;
-                left: calc(#{$padding} * -1);
-                /* this moves the line from the start of the card ignoring the padding we set for it */
+                left: calc(#{$padding} * -1);/* this moves the line from the start of the card ignoring the padding we set for it */
                 bottom: -2px;
-                width:calc(100% + #{$padding});
-                /* this makes the line as big as the content of the title */
-                background: $card-clr-accent-400;
+                width:calc(100% + #{$padding});/* this makes the line as big as the content of the title */
+                // background: $card-clr-accent-400;
+                background: $accent-color;
             
                 transform-origin: left;/* since it was animating from the center this tells it where to start  */
                 transition:  transform 500ms ease;
             }
         
         }
-        &-body{
-         color: rgba(255, 255, 255, 0.9); /* lighten the text not sure of browser support */
-        }
+        // &-body{
+        //  color: rgba(255, 255, 255, 0.9); /* lighten the text not sure of browser support */
+        // }
         & .button{
             cursor: pointer;
             display: inline;
             max-width: 150px;
             text-decoration: none;
             color: $card-clr-neutral-900;
-            background-color: $card-clr-accent-400;
+            // background-color: $card-clr-accent-400;
+            background-color: $accent-color;
             padding:0.5rem 1.25rem;
             text-align: center;
             border-radius: 1rem;

@@ -55,6 +55,8 @@
 
     &-done {
       background: linear-gradient(to left, #F2709C, #FF9472);
+      background: linear-gradient(to left, $accent-color, $accent-color--2);
+
       // box-shadow: 0 3px 3px -5px #F2709C, 0 2px 5px #F2709C;
       border-radius: 20px;
       color: #fff;
@@ -65,21 +67,32 @@
 
   }
 
-  .p70 {
-   width: 70%;
+  .p10 {
+   width: 10%;
     }
-   
-  .p30{
-    width: 30%;
-  }
   .p20 {
     width: 20%;
   }
-  .p90 {
-    width: 90%;
+  .p30{
+    width: 30%;
+  }
+  .p40 {
+    width: 40%;
+  }
+  .p50 {
+    width: 50%;
+  }
+  .p60 {
+    width: 60%;
+  }
+  .p70 {
+    width: 70%;
   }
   .p80 {
     width: 80%;
+  }
+  .p90 {
+    width: 90%;
   }
   
   

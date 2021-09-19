@@ -6,12 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://use.fontawesome.com/a375b7298d.js"></script>
   <link rel="stylesheet" href="./css/main.css">
   <title>My portfolio page</title>
 </head>
 <body>
     <!-- Nav menu   -->
-  <div class="tab align">
+  <div class="tab">
     <button class="tablinks" onclick="openTab(event, 'Home')">Home</button>
     <button class="tablinks" onclick="openTab(event, 'About')">About</button>
     <button class="tablinks" onclick="openTab(event, 'Projects')">Projects</button>
@@ -19,15 +20,15 @@
   </div>
 
   <div id="Home" class="tabcontent tabcontent-home">
-    <section class="main align">
+    <section class="main">
       <div class="main-intro ">
         <h1 class="main-intro__text">
-          <div class="span">
-            <p class="highlight"></p>Irina is a frontend developer who<br> loves to learn 
-              new things and get her hands dirty trying to 
-              make something new</p>
+          <div class="main__highlight">
+             Irina is a frontend developer who loves to learn 
+             new things and get her hands dirty trying to 
+             make something new
             <div class="line-separator"></div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quo beatae, labore ducimus accusantium.</p>
+            <p class="main__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quo beatae, labore ducimus accusantium.</p>
             <div class="social-media">
               <a href="#"><i class='bx bxl-github'></i></a>
               <a href="#"><i class='bx bxl-linkedin-square' ></i></a>
@@ -195,10 +196,65 @@
             <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
         </svg>
       </div>
-      <h1>Contact me</h1>
+      <!-- <h1>Contact me</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora possimus repudiandae, quae commodi placeat id repellat ratione. Neque veritatis vitae recusandae nobis consectetur magnam ex culpa, mollitia quis qui animi in ipsa nesciunt commodi nisi ad velit adipisci ab dolores, expedita eveniet? Quae atque recusandae eum repellat sapiente. Itaque facilis consequuntur magni! Aspernatur nemo quos aliquid quaerat? Harum natus non porro ab sequi dolorum? Voluptate itaque beatae porro. Fuga animi aliquam facere, dignissimos blanditiis consectetur repellendus quo maxime doloribus aspernatur. Dicta consectetur excepturi quasi asperiores ratione libero soluta consequatur facilis nesciunt minima assumenda, atque id similique mollitia ad porro, nisi optio quae sit laboriosam dolor! Corporis quis, dolor possimus molestias at cum, sunt eligendi voluptas error, doloremque nisi quod optio tenetur. Nisi provident laboriosam nulla eius porro numquam minima enim rerum, delectus consequatur labore recusandae omnis rem ad obcaecati, quis accusamus doloremque mollitia magnam, debitis fugiat itaque incidunt? Eveniet ab consequuntur vero natus beatae hic, dicta debitis quod exercitationem enim voluptates quo amet omnis consectetur, est nam neque? Quibusdam pariatur, facere vel velit iusto quaerat doloremque itaque ratione laborum quod earum tempora a harum quas corrupti unde doloribus blanditiis atque ipsa ipsam omnis accusamus? Ea eligendi ullam maiores iste perferendis!
-      </p>
+      </p> -->
+      <div class="content">
+        <h2>Contact Me</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere pariatur iure dolorem eligendi natus iusto aspernatur amet molestias et quae officiis magnam impedit corporis eum rem, cupiditate id voluptatem vero!</p>
+    </div>
+    <div class="container">
+        <div class="contactInfo">
+            <div class="box">
+                <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                <div class="text">
+                    <h3>Address</h3>
+                    <p>4683 Private Lane, <br> Albany Georgia, <br> 31701</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                <div class="text">
+                    <h3>Phone</h3>
+                    <p>229-280-6694</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                <div class="text">
+                    <h3>Email</h3>
+                    <p>bussiness@temporary-mail.net</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="contactForm">
+            <form >
+                <h2>Send Message</h2>
+                <div class="inputBox">
+                    <input type="text" required="required" >
+                    <span>Full name</span>
+                </div>
+                <div class="inputBox">
+                    <input type="text" required="required" >
+                    <span>Email</span>
+                </div>
+                <div class="inputBox">
+                    <textarea required="required"></textarea>
+                    <span>Type your message</span>
+                </div>
+                <div class="inputBox">
+                    <input type="submit" value="Send" >
+                    
+                </div>
+                
+
+            </form>
+        </div>
+    </div>
       
       <div class="wave2">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
