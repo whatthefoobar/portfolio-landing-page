@@ -74,7 +74,7 @@ body {
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  color: #bfd200;
+  color: #e2eb86;
 }
 
 /* Create an active/current tablink class */
@@ -134,8 +134,10 @@ body {
 }
 
 .about__text__title {
-  padding-bottom: 20px;
-  color: #bfd200;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #e2eb86;
 }
 
 .about__skills {
@@ -152,7 +154,7 @@ body {
 
 .about__skills__title {
   padding-bottom: 20px;
-  color: #bfd200;
+  color: #e2eb86;
   text-align: center;
 }
 
@@ -166,10 +168,8 @@ body {
 }
 
 .about__skills .progress-done {
-  background: -webkit-gradient(linear, right top, left top, from(#F2709C), to(#FF9472));
-  background: linear-gradient(to left, #F2709C, #FF9472);
-  background: -webkit-gradient(linear, right top, left top, from(#bfd200), to(#80b918));
-  background: linear-gradient(to left, #bfd200, #80b918);
+  background: -webkit-gradient(linear, right top, left top, from(#b4cc4e), to(#277647));
+  background: linear-gradient(to left, #b4cc4e, #277647);
   border-radius: 20px;
   color: #fff;
   display: inline-block;
@@ -215,6 +215,13 @@ body {
 
 .projects {
   background-color: #363535;
+}
+
+.projects__title {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #e2eb86;
 }
 
 .projects__container {
@@ -303,7 +310,7 @@ body {
   bottom: -2px;
   width: calc(100% + 1.5rem);
   /* this makes the line as big as the content of the title */
-  background: #bfd200;
+  background: #e2eb86;
   -webkit-transform-origin: left;
           transform-origin: left;
   /* since it was animating from the center this tells it where to start  */
@@ -319,7 +326,7 @@ body {
   max-width: 150px;
   text-decoration: none;
   color: #13171B;
-  background-color: #bfd200;
+  background-color: #e2eb86;
   padding: 0.5rem 1.25rem;
   text-align: center;
   border-radius: 1rem;
@@ -405,18 +412,19 @@ body {
   text-align: center;
 }
 
-.contact .content h2 {
-  font-size: 36px;
-  font-weight: 500;
-  color: #fff;
-}
-
 .contact .content p {
   font-weight: 300;
   color: #fff;
 }
 
-.container {
+.contact__title {
+  font-size: 30px;
+  font-weight: 500;
+  color: #e2eb86;
+  margin-bottom: 20px;
+}
+
+.contact .container {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -430,7 +438,7 @@ body {
   margin-top: 30px;
 }
 
-.container .contactInfo {
+.contact .container .contactInfo {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -441,7 +449,7 @@ body {
           flex-direction: column;
 }
 
-.container .contactInfo .box {
+.contact .container .contactInfo .box {
   position: relative;
   padding: 20px 0;
   display: -webkit-box;
@@ -449,7 +457,7 @@ body {
   display: flex;
 }
 
-.container .contactInfo .box .icon {
+.contact .container .contactInfo .icon {
   min-width: 60px;
   height: 60px;
   background: #fff;
@@ -467,7 +475,7 @@ body {
   font-size: 22px;
 }
 
-.container .contactInfo .box .text {
+.contact .container .contactInfo .text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -480,31 +488,31 @@ body {
   font-weight: 300;
 }
 
-.container .contactInfo .box .text h3 {
-  color: #bfd200;
+.contact .container .contactInfo h3 {
+  color: #e2eb86;
 }
 
-.contactForm {
+.contact .container .contactForm {
   width: 40%;
   padding: 40px;
   background: #fff;
   color: black;
 }
 
-.contactForm h2 {
+.contact .container .contactForm h2 {
   font-size: 30px;
   color: #333;
   font-weight: 500;
 }
 
-.contactForm .inputBox {
+.contact .container .contactForm .inputBox {
   position: relative;
   width: 100%;
   margin-top: 10px;
 }
 
-.contactForm .inputBox input,
-.contactForm .inputBox textarea {
+.contact .container .contactForm .inputBox input,
+.contact .container .contactForm .inputBox textarea {
   width: 100%;
   padding: 5px 0;
   font-size: 16px;
@@ -515,7 +523,7 @@ body {
   resize: none;
 }
 
-.contactForm .inputBox span {
+.contact .container .contactForm .inputBox span {
   position: absolute;
   left: 0;
   padding: 5px 0;
@@ -539,8 +547,9 @@ body {
 
 .contactForm .inputBox input[type="submit"] {
   width: 100px;
-  background: #bfd200;
-  color: #fff;
+  background: #e2eb86;
+  border-radius: 15px;
+  color: #333;
   border: none;
   cursor: pointer;
   padding: 10px;
@@ -731,7 +740,7 @@ body {
   margin-bottom: 1.5rem;
   height: 3px;
   width: 40%;
-  background: #bfd200;
+  background: #e2eb86;
 }
 
 @media (max-width: 480px) {
@@ -756,15 +765,15 @@ body {
 }
 
 .main-intro__text .social-media .bx:hover {
-  color: #bfd200;
+  color: #e2eb86;
 }
 
 .main-intro__image {
   -ms-flex-preferred-size: 45%;
       flex-basis: 45%;
   padding: 15rem;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../img/portfolio-img-small.jpg") center top;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/portfolio-img-small.jpg") center top;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.8))), url("../img/portfolio-img-small.jpg") center top;
+  background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("../img/portfolio-img-small.jpg") center top;
   background-size: cover;
   background-position: center;
 }

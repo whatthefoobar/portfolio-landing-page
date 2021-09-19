@@ -4,6 +4,13 @@
 .projects{   
  background-color: $color-grey;
 
+ &__title{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color:$accent-color;
+ }
+
  &__container{
     display: flex;
     align-items: center;
