@@ -407,6 +407,12 @@ body {
   background-size: cover;
 }
 
+@media (max-width: 1024px) {
+  .contact {
+    padding: 50px;
+  }
+}
+
 .contact .content {
   max-width: 800px;
   text-align: center;
@@ -438,6 +444,15 @@ body {
   margin-top: 30px;
 }
 
+@media (max-width: 1024px) {
+  .contact .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .contact .container .contactInfo {
   width: 50%;
   display: -webkit-box;
@@ -447,6 +462,13 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+  .contact .container .contactInfo {
+    margin-bottom: 40px;
+    width: 100%;
+  }
 }
 
 .contact .container .contactInfo .box {
@@ -499,6 +521,12 @@ body {
   color: black;
 }
 
+@media (max-width: 1024px) {
+  .contact .container .contactForm {
+    width: 100%;
+  }
+}
+
 .contact .container .contactForm h2 {
   font-size: 30px;
   color: #333;
@@ -535,17 +563,17 @@ body {
   color: #666;
 }
 
-.contactForm .inputBox input:focus ~ span,
-.contactForm .inputBox input:valid ~ span,
-.contactForm .inputBox textarea:focus ~ span,
-.contactForm .inputBox textarea:valid ~ span {
+.contact .container .contactForm .inputBox input:focus ~ span,
+.contact .container .contactForm .inputBox input:valid ~ span,
+.contact .container .contactForm .inputBox textarea:focus ~ span,
+.contact .container .contactForm .inputBox textarea:valid ~ span {
   color: #e91e63;
   font-size: 12px;
   -webkit-transform: translateY(-20px);
           transform: translateY(-20px);
 }
 
-.contactForm .inputBox input[type="submit"] {
+.contact .container .contactForm .inputBox input[type="submit"] {
   width: 100px;
   background: #e2eb86;
   border-radius: 15px;
@@ -554,25 +582,6 @@ body {
   cursor: pointer;
   padding: 10px;
   font-size: 18px;
-}
-
-@media (max-width: 991px) {
-  .contact {
-    padding: 50px;
-  }
-  .container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .container .contactInfo {
-    margin-bottom: 40px;
-  }
-  .container .contactInfo,
-  .contactForm {
-    width: 100%;
-  }
 }
 
 .tabcontent-home {
