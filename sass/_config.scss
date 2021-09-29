@@ -5,10 +5,6 @@ $accent-color--1:#b4cc4e;
 $accent-color--2:#277647;
 
 $color-grey: #363535;
-// $color-light-grey:#4e4c4c;
-
-$card-clr-neutral-900: #13171B;
-$card-clr-neutral-100: #FFF;
 $padding: 1.5rem;
 
 
@@ -29,18 +25,21 @@ $padding: 1.5rem;
     background-color: $primary-color;
     // height: 100vh;
     color: $secondary-color;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.7rem;
     width: 100%;
     min-height: 100vh;
     overflow-x: hidden;
   }
 
-// .align{
-//   max-width: 900px;
-//   width: 85%;
-//   margin: 0 auto;
-// }
+  h1, h2, h3, h4, h5, h6{
+    font-family: 'Poppins', sans-serif;
+  }
+
+  p{
+    font-family: 'Open Sans', sans-serif;
+  }
+
 
 @mixin transition-ease {
   transition: all 0.5s ease-in-out; /*to be reused that is why it is all*/

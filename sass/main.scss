@@ -4,6 +4,8 @@
 @import "./projects";
 @import "./contact";
 
+
+
 .tabcontent-home{
   display: block;
 }
@@ -118,8 +120,12 @@
       } 
       .main__highlight{
         font-size: 2.5rem;
+        font-weight: 600;
         // text-indent: 1rem;
-
+        
+        & span{
+          color: lighten($accent-color, 15%);
+        }
         @include query(mobile){
           font-size: 2.2rem;
           font-weight: 400;
@@ -131,7 +137,7 @@
         margin-top: 1.5rem;
         margin-bottom: 1.5rem;
         height:3px;
-        width: 40%;
+        width: 45%;
         background:$accent-color; 
         // border-bottom:1px solid #313030;// wtf did i put this for?
 
