@@ -109,10 +109,10 @@
       display: flex;
       justify-items: center;
       align-items: center;
-      padding: 15rem 0;
+      padding: 12rem 0;
 
       @include query(tablet){
-        padding: 7rem 1rem;
+        padding: 7rem 1rem 0 1rem;
       } 
 
       @include query(mobile){
@@ -156,8 +156,9 @@
         margin-top: 2rem;
     
         .bx{
-          padding-right: 6px;
+          padding-right: 0.6rem;
           color: $secondary-color;
+          transition: color 0.3s ease-in;
         }
         .bx:hover{
           color: $accent-color;// for testing
@@ -167,7 +168,7 @@
     }
     &__image{
       flex-basis: 45%;
-      padding: 15rem;
+      padding: 10rem;
       // border: 2px solid green;
       background: linear-gradient(
           to right bottom,
@@ -176,6 +177,17 @@
       url("../img/portfolio-img-small.jpg") center top;
       background-size: cover;
       background-position: center;
+
+      // @include query(mobile){
+      //   padding: 15rem;
+      //   background: linear-gradient(
+      //     to right bottom,
+      //     rgba(0, 0, 0, 0.5),
+      //     rgba(0, 0, 0, 0.8)),
+      // url("../img/portfolio-img.jpeg") center top;
+      // background-size: cover;
+      // background-position: center;
+      // }
 
     }
   } 

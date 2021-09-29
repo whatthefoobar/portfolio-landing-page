@@ -40,6 +40,8 @@ $padding: 1.5rem;
     font-family: 'Open Sans', sans-serif;
   }
 
+  img {max-width:100%;}
+
 
 @mixin transition-ease {
   transition: all 0.5s ease-in-out; /*to be reused that is why it is all*/

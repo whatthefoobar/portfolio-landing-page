@@ -27,7 +27,7 @@
   max-width: 500px;
 
   &__title{
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 500;
     margin-bottom: 20px;
     color: $accent-color;
@@ -50,7 +50,7 @@
   .progress {
     background-color:#d8d8d8;
     border-radius:20px;
-    height:12px;
+    // height:12px;
     font-size: 11px;
     min-width:250px;
     margin: 10px 0;
