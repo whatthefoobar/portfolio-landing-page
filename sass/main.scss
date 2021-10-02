@@ -178,7 +178,7 @@
           text-align: center;
           line-height: 40px;
           background: $primary-color;
-          border-radius: 50%;
+          border-radius: 25%;
           color:$accent-color;
           transition:0.5s;
 
@@ -189,7 +189,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            border-radius: 50%;
+            border-radius: 25%;
             background:$accent-color;
             transition:0.5s;
             transform: scale(.9);
