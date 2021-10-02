@@ -137,9 +137,16 @@
         margin-top: 1.5rem;
         margin-bottom: 1.5rem;
         height:3px;
-        width: 45%;
+        width: 0%;
         background:$accent-color; 
-        // border-bottom:1px solid #313030;// wtf did i put this for?
+        animation: line-separator 2s ease-in;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+
+        @keyframes line-separator {
+          from{width: 0%}
+          to{width:45%}
+        }
 
         @include query(mobile){
           width: 100%;
@@ -152,17 +159,54 @@
         letter-spacing: 3px;
 
       }
-      .social-media{
-        margin-top: 2rem;
+      .social-media {
+        margin: 1.8rem 0 0 0;
+        padding: 0;
+        display: flex;
     
-        .bx{
-          padding-right: 0.6rem;
+        & li {
+          list-style: none;
+          margin: 0 2px;
+          font-size: 27px;
           color: $secondary-color;
-          transition: color 0.3s ease-in;
         }
-        .bx:hover{
-          color: $accent-color;// for testing
+        & a {
+          position: relative;
+          display: block;
+          width: 40px;
+          height: 40px;
+          text-align: center;
+          line-height: 40px;
+          background: $primary-color;
+          border-radius: 50%;
+          color:$accent-color;
+          transition:0.5s;
+
+          &::before{
+            content:"";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background:$accent-color;
+            transition:0.5s;
+            transform: scale(.9);
+            z-index: -1;
+          }
+          &:hover::before{
+            transform: scale(1.1);
+            box-shadow: 0 0 10px $accent-color;
+          }
+          &:hover{
+            color:$accent-color;
+            box-shadow: 0 0 3px $accent-color;
+            text-shadow: 0 0 3px $accent-color;
         }
+          
+      }
+  
       } 
       
     }

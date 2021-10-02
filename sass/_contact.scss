@@ -144,7 +144,11 @@
                     cursor: pointer;
                     padding: 10px;
                     font-size: 18px;
+                    &:hover{
+                        background-color: $secondary-color;//something
+                    }
                 }
+                
             }
         }
     }

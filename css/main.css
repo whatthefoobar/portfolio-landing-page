@@ -94,6 +94,7 @@ img {
   color: #e2eb86;
   border-top: 1px solid #f7f9de;
   border-bottom: 1px solid #f7f9de;
+  border-bottom-width: 50%;
   font-size: 1.85rem;
 }
 
@@ -598,6 +599,10 @@ img {
   font-size: 18px;
 }
 
+.contact .container .contactForm .inputBox input[type="submit"]:hover {
+  background-color: #eee;
+}
+
 .tabcontent-home {
   display: block;
 }
@@ -767,8 +772,32 @@ img {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   height: 3px;
-  width: 45%;
+  width: 0%;
   background: #e2eb86;
+  -webkit-animation: line-separator 2s ease-in;
+          animation: line-separator 2s ease-in;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes line-separator {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 45%;
+  }
+}
+
+@keyframes line-separator {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 45%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -784,18 +813,62 @@ img {
 }
 
 .main-intro__text .social-media {
-  margin-top: 2rem;
+  margin: 1.8rem 0 0 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.main-intro__text .social-media .bx {
-  padding-right: 0.6rem;
+.main-intro__text .social-media li {
+  list-style: none;
+  margin: 0 2px;
+  font-size: 27px;
   color: #eee;
-  -webkit-transition: color 0.3s ease-in;
-  transition: color 0.3s ease-in;
 }
 
-.main-intro__text .social-media .bx:hover {
+.main-intro__text .social-media a {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background: #272727;
+  border-radius: 50%;
   color: #e2eb86;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main-intro__text .social-media a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #e2eb86;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  z-index: -1;
+}
+
+.main-intro__text .social-media a:hover::before {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0 0 10px #e2eb86;
+          box-shadow: 0 0 10px #e2eb86;
+}
+
+.main-intro__text .social-media a:hover {
+  color: #e2eb86;
+  -webkit-box-shadow: 0 0 3px #e2eb86;
+          box-shadow: 0 0 3px #e2eb86;
+  text-shadow: 0 0 3px #e2eb86;
 }
 
 .main-intro__image {
