@@ -417,7 +417,7 @@ img {
   color: #eee;
   background-size: cover;
   padding: 10rem 0 0;
-  max-width: 28ch;
+  max-width: 24ch;
   /* 35 characters wide responsive to font size */
   border-radius: 0.5rem;
   overflow: hidden;
