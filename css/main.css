@@ -182,7 +182,7 @@ img {
   margin: 10px 0;
 }
 
-.about__skills .progress-done {
+.about__skills .p10 {
   background: -webkit-gradient(linear, right top, left top, from(#b4cc4e), to(#277647));
   background: linear-gradient(to left, #b4cc4e, #277647);
   border-radius: 20px;
@@ -190,42 +190,185 @@ img {
   display: inline-block;
   text-align: center;
   height: 100%;
-}
-
-.about__skills .p10 {
   width: 10%;
+  -webkit-animation: p10bar 2s linear forwards;
+          animation: p10bar 2s linear forwards;
 }
 
 .about__skills .p20 {
+  background: -webkit-gradient(linear, right top, left top, from(#b4cc4e), to(#277647));
+  background: linear-gradient(to left, #b4cc4e, #277647);
+  border-radius: 20px;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  height: 100%;
   width: 20%;
+  -webkit-animation: p20bar 2s linear forwards;
+          animation: p20bar 2s linear forwards;
 }
 
 .about__skills .p30 {
+  background: -webkit-gradient(linear, right top, left top, from(#b4cc4e), to(#277647));
+  background: linear-gradient(to left, #b4cc4e, #277647);
+  border-radius: 20px;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  height: 100%;
   width: 30%;
+  -webkit-animation: p30bar 2s linear forwards;
+          animation: p30bar 2s linear forwards;
 }
 
 .about__skills .p40 {
+  background: -webkit-gradient(linear, right top, left top, from(#b4cc4e), to(#277647));
+  background: linear-gradient(to left, #b4cc4e, #277647);
+  border-radius: 20px;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  height: 100%;
   width: 40%;
+  -webkit-animation: p40bar 2s linear forwards;
+          animation: p40bar 2s linear forwards;
 }
 
 .about__skills .p50 {
+  background: -webkit-gradient(linear, right top, left top, from(#b4cc4e), to(#277647));
+  background: linear-gradient(to left, #b4cc4e, #277647);
+  border-radius: 20px;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  height: 100%;
   width: 50%;
+  -webkit-animation: p50bar 2s linear forwards;
+          animation: p50bar 2s linear forwards;
 }
 
 .about__skills .p60 {
+  background: -webkit-gradient(linear, right top, left top, from(#b4cc4e), to(#277647));
+  background: linear-gradient(to left, #b4cc4e, #277647);
+  border-radius: 20px;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  height: 100%;
   width: 60%;
+  -webkit-animation: p60bar 2s linear forwards;
+          animation: p60bar 2s linear forwards;
 }
 
 .about__skills .p70 {
+  background: -webkit-gradient(linear, right top, left top, from(#b4cc4e), to(#277647));
+  background: linear-gradient(to left, #b4cc4e, #277647);
+  border-radius: 20px;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  height: 100%;
   width: 70%;
+  -webkit-animation: p70bar 2s linear forwards;
+          animation: p70bar 2s linear forwards;
 }
 
 .about__skills .p80 {
+  background: -webkit-gradient(linear, right top, left top, from(#b4cc4e), to(#277647));
+  background: linear-gradient(to left, #b4cc4e, #277647);
+  border-radius: 20px;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  height: 100%;
   width: 80%;
+  -webkit-animation: p80bar 2s linear forwards;
+          animation: p80bar 2s linear forwards;
 }
 
 .about__skills .p90 {
+  background: -webkit-gradient(linear, right top, left top, from(#b4cc4e), to(#277647));
+  background: linear-gradient(to left, #b4cc4e, #277647);
+  border-radius: 20px;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  height: 100%;
   width: 90%;
+  -webkit-animation: p90bar 2s linear forwards;
+          animation: p90bar 2s linear forwards;
+}
+
+@-webkit-keyframes p60bar {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 60%;
+  }
+}
+
+@keyframes p60bar {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 60%;
+  }
+}
+
+@-webkit-keyframes p70bar {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+@keyframes p70bar {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+@-webkit-keyframes p80bar {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+@keyframes p80bar {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+@-webkit-keyframes p90bar {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
+}
+
+@keyframes p90bar {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
 }
 
 .projects {

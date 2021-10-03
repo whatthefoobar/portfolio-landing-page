@@ -48,6 +48,15 @@ $padding: 1.5rem;
   transition: all 0.5s ease-in-out; /*to be reused that is why it is all*/
 }
 
+@mixin progress-done {
+  background: linear-gradient(to left, $accent-color--1, $accent-color--2);
+  border-radius: 20px;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  height: 100%;
+}
+
 @function set-text-color($color) {
   @if (lightness($color) > 40%) {
     @return #000;

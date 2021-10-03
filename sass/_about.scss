@@ -55,48 +55,90 @@
     min-width:250px;
     margin: 10px 0;
 
-    &-done {
-      // background: linear-gradient(to left, #F2709C, #FF9472);
-      background: linear-gradient(to left, $accent-color--1, $accent-color--2);
-
-      // box-shadow: 0 3px 3px -5px #F2709C, 0 2px 5px #F2709C;
-      border-radius: 20px;
-      color: #fff;
-      display: inline-block;
-      text-align: center;
-      height: 100%;
-    }
-
   }
 
   .p10 {
-   width: 10%;
+    @include progress-done;
+    width: 10%;
+    animation: p10bar 2s linear forwards;
     }
   .p20 {
+    @include progress-done;
     width: 20%;
+    animation: p20bar 2s linear forwards;
   }
   .p30{
+    @include progress-done;
     width: 30%;
+    animation: p30bar 2s linear forwards;
   }
   .p40 {
+    @include progress-done;
     width: 40%;
+    animation: p40bar 2s linear forwards;
   }
   .p50 {
+    @include progress-done;
     width: 50%;
+    animation: p50bar 2s linear forwards;
   }
   .p60 {
+    @include progress-done;
     width: 60%;
+    animation: p60bar 2s linear forwards;
   }
   .p70 {
+    @include progress-done;
     width: 70%;
+    animation: p70bar 2s linear forwards;
+    // animation-delay: 1s;
   }
   .p80 {
+    @include progress-done;
     width: 80%;
+    animation: p80bar 2s linear forwards;
   }
   .p90 {
+    @include progress-done;
     width: 90%;
+    animation: p90bar 2s linear forwards;
+  }
+
+  @keyframes p60bar{
+    from{
+      width: 0%;
+    }
+    to{
+      width: 60%;
+    }
   }
   
+  @keyframes p70bar{
+    from{
+      width: 0%;
+    }
+    to{
+      width: 70%;
+    }
+  }
+
+  @keyframes p80bar{
+    from{
+      width: 0%;
+    }
+    to{
+      width: 80%;
+    }
+  }
+
+  @keyframes p90bar{
+    from{
+      width: 0%;
+    }
+    to{
+      width: 90%;
+    }
+  }
   
 }
 }
