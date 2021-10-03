@@ -32,8 +32,9 @@
   cursor: pointer;
   padding: 1rem 1.2rem;
   font-size: 1.7rem;
+  // letter-spacing: 0;
   font-weight: 600;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 
   @include query(mobile){
     padding: 1rem 0.7rem;
@@ -44,44 +45,19 @@
 }
 
 /* Change background color of buttons on hover */
-.tab button:hover {
+.tab button:hover{
   color: $accent-color;
+  
 }
 
-/* Create an active/current tablink class */
 .tab button.active {
-  // text-decoration: underline; 
-  color:$accent-color;
+  // letter-spacing: 3px;
+  color: $accent-color;
+  font-size: 1.85rem;
   border-top: 1px solid lighten($accent-color, 20%);
   border-bottom: 1px solid lighten($accent-color, 20%);
-  border-bottom-width: 50%;
-  font-size: 1.85rem; //18.5px
-  // animation: tab-border 3s linear;
-  
-  
 }
 
-
-// @keyframes tab-border {
-//   0% {
-//     // border-top-width: 0%;
-//     border-bottom-width: 0%;
-//   }
-//   25% {
-//     // border-top-width: 0%;
-//     border-bottom-width: 25%;
-//   }
-//   50% {
-//     // border-top-width: 0%;
-//     border-bottom-width: 50%;
-//   }
-
-//   100% {
-//     // border-top-width: 100%;
-//     border-bottom-width: 100%;
-//   }
-  
-// }
 
 /* Style the tab content */
 .tabcontent {
