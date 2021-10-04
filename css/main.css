@@ -412,6 +412,11 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  gap: 30px;
   line-height: 1.6;
 }
 
@@ -433,6 +438,12 @@ img {
   padding: 30px;
 }
 
+@media (max-width: 768px) {
+  .projects__container .container {
+    gap: 40px;
+  }
+}
+
 .projects__container .card {
   color: #eee;
   background-size: cover;
@@ -446,6 +457,13 @@ img {
   transition: -webkit-transform 500ms ease;
   transition: transform 500ms ease;
   transition: transform 500ms ease, -webkit-transform 500ms ease;
+}
+
+@media (max-width: 480px) {
+  .projects__container .card {
+    width: 100%;
+    max-width: none;
+  }
 }
 
 .projects__container .card:hover, .projects__container .card:focus-within {
@@ -805,6 +823,31 @@ img {
   fill: #272727;
 }
 
+.wave1path {
+  stroke-dasharray: 2545;
+  stroke-dashoffset: -2545;
+  -webkit-animation: wave1 2s infinite;
+          animation: wave1 2s infinite;
+}
+
+@-webkit-keyframes wave1 {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 2545;
+  }
+}
+
+@keyframes wave1 {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 2545;
+  }
+}
+
 .wave2 {
   position: absolute;
   bottom: 0;
@@ -1043,4 +1086,20 @@ img {
   background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("../img/portfolio-img-small.jpg") center top;
   background-size: cover;
   background-position: center;
+}
+
+.wave1path {
+  stroke-dasharray: 2545;
+  stroke-dashoffset: -2545;
+  -webkit-animation: wave1 2s infinite;
+          animation: wave1 2s infinite;
+}
+
+@keyframes wave1 {
+  from {
+    stroke-dashoffset: -2545;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
 }

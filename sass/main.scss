@@ -45,6 +45,22 @@
   }
 }
 
+.wave1path {
+  stroke-dasharray: 2545;
+  stroke-dashoffset: -2545;
+
+  animation: wave1 2s infinite;
+}
+
+@keyframes wave1{
+  from{
+    stroke-dashoffset: 0;
+  }
+  to{
+    stroke-dashoffset:2545;
+  }
+}
+
 .wave2 {
   position: absolute;
   bottom: 0;
@@ -222,19 +238,24 @@
       background-size: cover;
       background-position: center;
 
-      // @include query(mobile){
-      //   padding: 15rem;
-      //   background: linear-gradient(
-      //     to right bottom,
-      //     rgba(0, 0, 0, 0.5),
-      //     rgba(0, 0, 0, 0.8)),
-      // url("../img/portfolio-img.jpeg") center top;
-      // background-size: cover;
-      // background-position: center;
-      // }
-
     }
   } 
 
   
+}
+
+.wave1path {
+  stroke-dasharray: 2545;
+  stroke-dashoffset:-2545;
+
+  animation: wave1 2s infinite;
+}
+
+@keyframes wave1{
+  from{
+    stroke-dashoffset: -2545;
+  }
+  to{
+    stroke-dashoffset:0;
+  }
 }

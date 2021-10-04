@@ -12,6 +12,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-flow: column wrap;
+    gap: 30px;
     line-height: 1.6;
 
     & .container{
@@ -23,6 +25,10 @@
         flex-wrap: wrap;
         gap: 25px;
         padding: 30px;
+
+        @include query(tablet){
+            gap: 40px;
+        }
     
     }
     
@@ -34,8 +40,12 @@
         max-width: 24ch;/* 35 characters wide responsive to font size */
         border-radius: 0.5rem;
         overflow: hidden;/* solves the square corners on bottom from the overlay*/
-        
         transition:transform 500ms ease;
+
+        @include query(mobile){
+            width: 100%;
+            max-width: none;// how tho?
+        }
         
 
         &:hover,
@@ -106,7 +116,9 @@
     }
     
 }
+
 }
+ 
 
 
 @mixin for-hover-options {
