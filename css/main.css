@@ -168,10 +168,10 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  width: calc(100% - 20rem - 40px);
+  width: calc(100% - 30rem - 40px);
   min-width: 400px;
   gap: 40px;
-  margin: 0 10rem;
+  margin: 0 15rem;
   -ms-flex-negative: 1;
       flex-shrink: 1;
 }
