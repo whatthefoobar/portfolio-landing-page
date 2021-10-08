@@ -102,8 +102,8 @@
   &-intro{ 
     width: 100%;
     display: flex;
-    flex-direction: row;
-    gap:4rem;
+    flex-direction: row wrap;
+    gap:1rem;
 
     @include query(tablet){
       gap: 2rem;
@@ -120,12 +120,14 @@
     }
 
     &__text{
-      // border: 2px solid red;
-      flex-basis: 55%;
+      // border: 2px solid orangered;
+      // flex-basis: 55%;
+      flex-grow:3;
       display: flex;
       justify-items: center;
       align-items: center;
       padding: 12rem 0;
+      
 
       @include query(tablet){
         padding: 7rem 1rem 0 1rem;
@@ -227,8 +229,9 @@
       
     }
     &__image{
-      flex-basis: 45%;
-      padding: 10rem;
+      // flex-basis: 45%;
+      flex-grow: 6;
+      padding: 16rem;
       // border: 2px solid green;
       background: linear-gradient(
           to right bottom,
@@ -243,6 +246,7 @@
 
   
 }
+
 
 .wave1path {
   stroke-dasharray: 2545;
