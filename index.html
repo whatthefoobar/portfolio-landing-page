@@ -1,303 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- fonts -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fonts -->
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- box icons  : use Box Icons or Font Awesome-->
-  <!-- <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'> -->
-  <script src="https://use.fontawesome.com/a375b7298d.js"></script>
+    <!-- box icons  : use Box Icons or Font Awesome-->
+    <!-- <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'> -->
+    <script src="https://use.fontawesome.com/a375b7298d.js"></script>
 
-  <link rel="stylesheet" href="./css/main.css">
-  <title>My portfolio page</title>
-</head>
-<body>
-
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>My portfolio page</title>
+  </head>
+  <body>
     <!-- Nav menu tabs   -->
-  <div class="tab">
-    <button class="tablinks active" onclick="openTab(event, 'Home')">Home</button>
-    <button class="tablinks" onclick="openTab(event, 'About')">About</button>
-    <button class="tablinks" onclick="openTab(event, 'Projects')">Projects</button>
-    <button class="tablinks" onclick="openTab(event, 'Contact')">Contact</button>
-  </div>
+    <div class="tab">
+      <button class="tablinks active" onclick="openTab(event, 'Home')">
+        Home
+      </button>
+      <button class="tablinks" onclick="openTab(event, 'About')">About</button>
+      <button class="tablinks" onclick="openTab(event, 'Projects')">
+        Projects
+      </button>
+      <button class="tablinks" onclick="openTab(event, 'Contact')">
+        Contact
+      </button>
+    </div>
 
-   <!-- Home/main page tab -->
+    <!-- Home/main page tab -->
 
-   <div id="Home" class="tabcontent tabcontent-home">
-    <section class="main">
-      <div class="main-intro ">
-        <h1 class="main-intro__text">
-          <div class="main__highlight">
-             Irina is a <span>frontend developer</span> <br>  
-             who loves to get her hands dirty and <br> learn 
-             new things
-            <div class="line-separator"></div>
-            <p class="main__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Culpa quo 
-              beatae, labore ducimus accusantium.</p>
-            <ul class="social-media">
-              <li><a href="#"><i class="fab fa-github-square"></i></a></li>
-              <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-              <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
-              <li><a href="#"><i class="fab fa-pinterest-square"></i></a></li>   
-            </ul>
-          </div> 
-           
-             
-        </h1>
+    <div id="Home" class="tabcontent tabcontent-home">
+      <section class="main">
+        <div class="main-intro">
+          <h1 class="main-intro__text">
+            <div class="main__highlight">
+              Irina is a <span>frontend developer</span> <br />
+              who loves to get her hands dirty and <br />
+              learn new things
+              <div class="line-separator"></div>
+              <p class="main__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+                Culpa quo beatae, labore ducimus accusantium.
+              </p>
+              <ul class="social-media">
+                <li>
+                  <a href="#"><i class="fab fa-github-square"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-facebook-official" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-instagram-square"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-pinterest-square"></i></a>
+                </li>
+              </ul>
+            </div>
+          </h1>
 
-        <div class="main-intro__image"></div>
-      </div>
-      
-  
-    </section>
-  </div>
-
-  <!-- About tab -->
-
-  <div id="About" class="tabcontent">
-    <section  class="about">
-      <div class="wave1">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill wave1path"></path>
-        </svg>
-      </div>
-      <div class="about__container">
-        <div class="about__text">
-          <h2 class="about__text__title">About me</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur tempora debitis necessitatibus possimus, inventore eos deleniti blanditiis dolor sed, repellat nam rerum aspernatur veniam numquam laudantium harum et.</p> 
+          <div class="main-intro__image"></div>
         </div>
-  
-        <div class="about__skills">   
-          <div class="about__skills--hard-skills">
-            <h3 class="about__skills__title">Hard skills</h3>
-            <div class="progress-box">
-              <h5>Javascript</h5>
-              <div class="progress">
-                <div class="progress-done p70"> 70%</div>
-              </div>
-            </div>       
-            <div class="progress-box">
-            <h5>HTML</h5>
-            <div class="progress">
-              <div class="progress-done p90"> 90%</div>
-            </div>
-            </div>
-            <div class="progress-box">
-            <h5>CSS</h5>
-            <div class="progress">
-              <div class="progress-done p80"> 80%</div>
-            </div>
-            </div>
-            <div class="progress-box">
-            <h5>Jquery</h5>
-            <div class="progress">
-              <div class="progress-done p80"> 80%</div>
-            </div>
-            </div>
-            <div class="progress-box">
-            <h5>React</h5>
-            <div class="progress">
-              <div class="progress-done p70"> 70%</div>
-            </div>
-            </div>
+      </section>
+    </div>
+
+    <!-- About tab -->
+
+    <div id="About" class="tabcontent">
+      <section class="about">
+        <div class="wave1">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+              class="shape-fill wave1path"
+            ></path>
+          </svg>
+        </div>
+        <div class="about__container">
+          <div class="about__text">
+            <h2 class="about__text__title">About me</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequuntur tempora debitis necessitatibus possimus, inventore
+              eos deleniti blanditiis dolor sed, repellat nam rerum aspernatur
+              veniam numquam laudantium harum et.
+            </p>
           </div>
 
-          <div class="about__skills--soft-skills">
-            <h3 class="about__skills__title">Soft skills</h3>
-            <div class="progress-box">
-              <h5>Time management</h5>
-              <div class="progress">
-                <div class="progress-done p60"> 60%</div>
-              </div>
-              </div>       
+          <div class="about__skills">
+            <div class="about__skills--hard-skills">
+              <h3 class="about__skills__title">Hard skills</h3>
               <div class="progress-box">
-              <h5>Team work</h5>
-              <div class="progress">
-                <div class="progress-done p70"> 70%</div>
-              </div>
+                <h5>Javascript</h5>
+                <div class="progress">
+                  <div class="progress-done p70">70%</div>
+                </div>
               </div>
               <div class="progress-box">
-              <h5>Conflict management</h5>
-              <div class="progress">
-                <div class="progress-done p90"> 90%</div>
-              </div>
-              </div>
-              <div class="progress-box">
-              <h5>Making Decisions</h5>
-              <div class="progress">
-                <div class="progress-done p90"> 90%</div>
-              </div>
+                <h5>HTML</h5>
+                <div class="progress">
+                  <div class="progress-done p90">90%</div>
+                </div>
               </div>
               <div class="progress-box">
-              <h5>Problem Solving</h5>
-              <div class="progress">
-                <div class="progress-done p80"> 80%</div>
+                <h5>CSS</h5>
+                <div class="progress">
+                  <div class="progress-done p80">80%</div>
+                </div>
               </div>
+              <div class="progress-box">
+                <h5>Jquery</h5>
+                <div class="progress">
+                  <div class="progress-done p80">80%</div>
+                </div>
               </div>
+              <div class="progress-box">
+                <h5>React</h5>
+                <div class="progress">
+                  <div class="progress-done p70">70%</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="about__skills--soft-skills">
+              <h3 class="about__skills__title">Soft skills</h3>
+              <div class="progress-box">
+                <h5>Time management</h5>
+                <div class="progress">
+                  <div class="progress-done p60">60%</div>
+                </div>
+              </div>
+              <div class="progress-box">
+                <h5>Team work</h5>
+                <div class="progress">
+                  <div class="progress-done p70">70%</div>
+                </div>
+              </div>
+              <div class="progress-box">
+                <h5>Conflict management</h5>
+                <div class="progress">
+                  <div class="progress-done p90">90%</div>
+                </div>
+              </div>
+              <div class="progress-box">
+                <h5>Making Decisions</h5>
+                <div class="progress">
+                  <div class="progress-done p90">90%</div>
+                </div>
+              </div>
+              <div class="progress-box">
+                <h5>Problem Solving</h5>
+                <div class="progress">
+                  <div class="progress-done p80">80%</div>
+                </div>
+              </div>
+            </div>
           </div>
-          
         </div>
-      </div>
-      
-  
-      <div class="wave2">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-        </svg>
-      </div>
-      
-    </section>
-  </div>
 
-  <!-- Projects tab -->
-  
-  <div id="Projects" class="tabcontent">
-    <section  class="three projects">
-      <div class="wave1">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
-        </svg>
-      </div>
-
-      <div class="projects__container">
-        
-        <div class="projects__text">
-          <h2 class="projects__title">Projects</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur tempora debitis necessitatibus possimus, inventore eos deleniti blanditiis dolor sed, repellat nam rerum aspernatur veniam numquam laudantium harum et.</p> 
+        <div class="wave2">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+              class="shape-fill"
+            ></path>
+          </svg>
         </div>
-        
-        <div class="container">
-          <div class="card" style="background-image: url('./img/img1.jpeg');">
-            <div class="card-content">
-                <div class="card-title">Project 1</div>
-                <p class="card-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat dicta corporis quis qui.</p>
+      </section>
+    </div>
+
+    <!-- Projects tab -->
+
+    <div id="Projects" class="tabcontent">
+      <section class="three projects">
+        <div class="wave1">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
+
+        <div class="projects__container">
+          <div class="projects__text">
+            <h2 class="projects__title">Projects</h2>
+            <p>
+              Here I include a sample of the projects I have been working on
+              during my time as a Frontend student at Hyper Island student time.
+            </p>
+          </div>
+
+          <div class="container">
+            <div class="card" style="background-image: url('./img/img1.jpeg')">
+              <div class="card-content">
+                <div class="card-title">Artist landing page</div>
+                <p class="card-body">My first take on a landing page.</p>
+                <a
+                  href="https://whatthefoobar.github.io/first-website/"
+                  class="button"
+                  >Learn more</a
+                >
+              </div>
+            </div>
+
+            <div class="card" style="background-image: url('./img/img2.jpeg')">
+              <div class="card-content">
+                <div class="card-title">Project 2</div>
+                <p class="card-body">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Fugiat dicta corporis quis qui.
+                </p>
                 <a href="#" class="button">Learn more</a>
+              </div>
             </div>
+
+            <div class="card" style="background-image: url('./img/img3.jpeg')">
+              <div class="card-content">
+                <div class="card-title">Project 3</div>
+                <p class="card-body">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Fugiat dicta corporis quis qui.
+                </p>
+                <a href="#" class="button">Learn more</a>
+              </div>
+            </div>
+
+            <div class="card" style="background-image: url('./img/img4.jpeg')">
+              <div class="card-content">
+                <div class="card-title">Project 3</div>
+                <p class="card-body">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Fugiat dicta corporis quis qui.
+                </p>
+                <a href="#" class="button">Learn more</a>
+              </div>
+            </div>
+          </div>
         </div>
 
-      <div class="card" style ="background-image: url('./img/img2.jpeg')">
-        <div class="card-content">
-            <div class="card-title">Project 2</div>
-            <p class="card-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat dicta corporis quis qui.</p>
-            <a href="#" class="button">Learn more</a>
+        <div class="wave2">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+              class="shape-fill"
+            ></path>
+          </svg>
         </div>
+      </section>
     </div>
 
-    <div class="card" style ="background-image: url('./img/img3.jpeg')">
-      <div class="card-content">
-          <div class="card-title">Project 3</div>
-          <p class="card-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat dicta corporis quis qui.</p>
-          <a href="#" class="button">Learn more</a>
-      </div>
-  </div>
+    <!-- Contact form tab -->
 
-  <div class="card" style ="background-image: url('./img/img4.jpeg')">
-    <div class="card-content">
-        <div class="card-title">Project 3</div>
-        <p class="card-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat dicta corporis quis qui.</p>
-        <a href="#" class="button">Learn more</a>
-    </div>
-</div>
-
-    </div>
-      </div>
-    
-      <div class="wave2">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-        </svg>
-      </div>
-    </section>
-  </div> 
-
-  <!-- Contact form tab -->
-  
-  <div id="Contact" class="tabcontent">
-    <section class="four contact">
-      <div class="wave1">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
-        </svg>
-      </div>
-      
-      <div class="content">
-        <h2 class="contact__title">Contact Me</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere pariatur iure dolorem eligendi natus iusto aspernatur amet molestias et quae officiis magnam impedit corporis eum rem, cupiditate id voluptatem vero!</p>
-    </div>
-    <div class="container">
-        <div class="contactInfo">
-            <div class="box">
-                <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-                <div class="text">
-                    <h3>Address</h3>
-                    <p>4683 Private Lane, <br> Albany Georgia, <br> 31701</p>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
-                <div class="text">
-                    <h3>Phone</h3>
-                    <p>229-280-6694</p>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
-                <div class="text">
-                    <h3>Email</h3>
-                    <p>bussiness@temporary-mail.net</p>
-                </div>
-            </div>
-
+    <div id="Contact" class="tabcontent">
+      <section class="four contact">
+        <div class="wave1">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+              class="shape-fill"
+            ></path>
+          </svg>
         </div>
-        <div class="contactForm">
-            <form >
-                <h2>Send Message</h2>
-                <div class="inputBox">
-                    <label for=""></label>
-                    <input type="text" required="required" class="name" >
-                    <span>Full name</span>
-                </div>
-                <div class="inputBox">
-                    <label for=""></label>
-                    <input type="text" required="required" class="email">
-                    <span>Email</span>
-                </div>
-                <div class="inputBox">
-                    <label for=""></label>
-                    <textarea required="required" class="message"></textarea>
-                    <span>Type your message</span>
-                </div>
-                <div class="inputBox">
-                    <input type="submit" value="Send" >
-                    
-                </div>
-                
 
+        <div class="content">
+          <h2 class="contact__title">Contact Me</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+            pariatur iure dolorem eligendi natus iusto aspernatur amet molestias
+            et quae officiis magnam impedit corporis eum rem, cupiditate id
+            voluptatem vero!
+          </p>
+        </div>
+        <div class="container">
+          <div class="contactInfo">
+            <div class="box">
+              <div class="icon">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+              </div>
+              <div class="text">
+                <h3>Address</h3>
+                <p>
+                  4683 Private Lane, <br />
+                  Albany Georgia, <br />
+                  31701
+                </p>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="icon">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+              </div>
+              <div class="text">
+                <h3>Phone</h3>
+                <p>229-280-6694</p>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="icon">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+              </div>
+              <div class="text">
+                <h3>Email</h3>
+                <p>bussiness@temporary-mail.net</p>
+              </div>
+            </div>
+          </div>
+          <div class="contactForm">
+            <form>
+              <h2>Send Message</h2>
+              <div class="inputBox">
+                <label for=""></label>
+                <input type="text" required="required" class="name" />
+                <span>Full name</span>
+              </div>
+              <div class="inputBox">
+                <label for=""></label>
+                <input type="text" required="required" class="email" />
+                <span>Email</span>
+              </div>
+              <div class="inputBox">
+                <label for=""></label>
+                <textarea required="required" class="message"></textarea>
+                <span>Type your message</span>
+              </div>
+              <div class="inputBox">
+                <input type="submit" value="Send" />
+              </div>
             </form>
+          </div>
         </div>
+
+        <div class="wave2">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
+      </section>
     </div>
-      
-      <div class="wave2">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-        </svg>
-      </div>
 
-    </section>
-
-  </div>
-
-
-  <script src="https://kit.fontawesome.com/c0f45b7229.js" crossorigin="anonymous"></script>
-  <script src="./js/app.js"></script>
-</body>
+    <script
+      src="https://kit.fontawesome.com/c0f45b7229.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/app.js"></script>
+  </body>
 </html>
