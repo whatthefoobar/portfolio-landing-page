@@ -479,6 +479,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 290px;
   gap: 20px;
   padding: 1.5rem;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(20%, rgba(0, 0, 0, 0.3)), color-stop(35%, rgba(0, 0, 0, 0.35)), to(black));
@@ -501,10 +502,10 @@ img {
   content: "";
   position: absolute;
   height: 4px;
-  left: calc(1.5rem * -1);
+  left: calc( 1.5rem * -1);
   /* this moves the line from the start of the card ignoring the padding we set for it */
   bottom: -2px;
-  width: calc(100% + 1.5rem);
+  width: calc( 100% + 1.5rem);
   /* this makes the line as big as the content of the title */
   background: #e2eb86;
   -webkit-transform-origin: left;

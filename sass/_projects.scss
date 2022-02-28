@@ -1,14 +1,14 @@
-.projects{   
- background-color: $color-grey;
+.projects {
+  background-color: $color-grey;
 
- &__title{
+  &__title {
     font-size: 28px;
     font-weight: 500;
     margin-bottom: 20px;
-    color:$accent-color;
- }
+    color: $accent-color;
+  }
 
- &__container{
+  &__container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,144 +16,144 @@
     gap: 30px;
     line-height: 1.6;
 
-    & .container{
-        position:relative;
-        max-width: 1200px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 25px;
-        padding: 30px;
+    & .container {
+      position: relative;
+      max-width: 1200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 25px;
+      padding: 30px;
 
-        @include query(tablet){
-            gap: 40px;
-        }
-    
+      @include query(tablet) {
+        gap: 40px;
+      }
     }
-    
-    & .card {
-        color: $secondary-color;
-        // background-image: url(../img/img1.jpeg);
-        background-size: cover;
-        padding: 10rem 0 0;
-        max-width: 24ch;/* 35 characters wide responsive to font size */
-        border-radius: 0.5rem;
-        overflow: hidden;/* solves the square corners on bottom from the overlay*/
-        transition:transform 500ms ease;
 
-        @include query(mobile){
-            width: 100%;
-            max-width: none;// how tho?
+    & .card {
+      color: $secondary-color;
+      // background-image: url(../img/img1.jpeg);
+      background-size: cover;
+      //   height: 400px;
+      padding: 10rem 0 0;
+      max-width: 24ch; /* 35 characters wide responsive to font size */
+      border-radius: 0.5rem;
+      overflow: hidden; /* solves the square corners on bottom from the overlay*/
+      transition: transform 500ms ease;
+
+      @include query(mobile) {
+        width: 100%;
+        max-width: none; // how tho?
+      }
+
+      &:hover,
+      &:focus-within {
+        transform: scale(1.05);
+      }
+
+      &-content {
+        display: flex;
+        flex-direction: column;
+        height: 290px;
+        gap: 20px;
+        padding: $padding;
+        background: linear-gradient(
+          hsla(0, 0%, 0%, 0),
+          hsla(0, 0%, 0%, 0.3) 20%,
+          hsla(0, 0%, 0%, 0.35) 35%,
+          hsla(0, 0%, 0%, 1)
+        ); /* amazing trick for a partial overlay over image for the text to show*/
+      }
+      &-title {
+        position: relative;
+        width: max-content; /* dangerous with more than 1 line of text */
+        font-weight: 600;
+
+        &::after {
+          box-sizing: border-box;
+          content: "";
+          position: absolute;
+          height: 4px;
+          left: calc(
+            #{$padding} * -1
+          ); /* this moves the line from the start of the card ignoring the padding we set for it */
+          bottom: -2px;
+          width: calc(
+            100% + #{$padding}
+          ); /* this makes the line as big as the content of the title */
+          // background: $card-clr-accent-400;
+          background: $accent-color;
+
+          transform-origin: left; /* since it was animating from the center this tells it where to start  */
+          transition: transform 500ms ease;
         }
-        
+      }
+      // &-body{
+      //  color: rgba(255, 255, 255, 0.9); /* lighten the text not sure of browser support */
+      // }
+      & .button {
+        cursor: pointer;
+        display: inline;
+        max-width: 150px;
+        text-decoration: none;
+        color: $color-grey;
+        background-color: $accent-color;
+        // font-weight: 700;
+        padding: 0.5rem 1.25rem;
+        text-align: center;
+        border-radius: 1rem;
 
         &:hover,
-        &:focus-within {
-            transform: scale(1.05);
+        &:focus {
+          background-color: $secondary-color;
         }
-        
-        &-content{
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            padding: $padding;
-            background: linear-gradient(
-                hsla(0, 0%, 0%, 0),
-                hsla(0, 0%, 0%, 0.3) 20%,
-                hsla(0, 0%, 0%, 0.35) 35%,
-                hsla(0, 0%, 0%, 1)
-            );/* amazing trick for a partial overlay over image for the text to show*/
-     
-        }
-        &-title{
-            position: relative;
-            width: max-content; /* dangerous with more than 1 line of text */
-            font-weight: 600;
-
-            &::after{
-                box-sizing: border-box;
-                content: "";
-                position: absolute;
-                height: 4px;
-                left: calc(#{$padding} * -1);/* this moves the line from the start of the card ignoring the padding we set for it */
-                bottom: -2px;
-                width:calc(100% + #{$padding});/* this makes the line as big as the content of the title */
-                // background: $card-clr-accent-400;
-                background: $accent-color;
-            
-                transform-origin: left;/* since it was animating from the center this tells it where to start  */
-                transition:  transform 500ms ease;
-            }
-        
-        }
-        // &-body{
-        //  color: rgba(255, 255, 255, 0.9); /* lighten the text not sure of browser support */
-        // }
-        & .button{
-            cursor: pointer;
-            display: inline;
-            max-width: 150px;
-            text-decoration: none;
-            color:$color-grey;
-            background-color: $accent-color;
-            // font-weight: 700;
-            padding:0.5rem 1.25rem;
-            text-align: center;
-            border-radius: 1rem;
-
-            &:hover,
-            &:focus{
-               background-color: $secondary-color;
-           }
-        }
-        
+      }
     }
     .card:hover .card-title::after,
-    .card:focus-within .card-title::after{
-        box-sizing: border-box;
-        transform: scaleX(1);
+    .card:focus-within .card-title::after {
+      box-sizing: border-box;
+      transform: scaleX(1);
     }
-    
+  }
 }
-
-}
- 
-
 
 @mixin for-hover-options {
-    @media (hover) { @content; }
+  @media (hover) {
+    @content;
+  }
 }
 
-@media(hover){
- .card-content{
-   transform: translateY(65%);/* moves content down so we can pop it up with animation later */
-   transition: transform 500ms ease;
+@media (hover) {
+  .card-content {
+    transform: translateY(
+      65%
+    ); /* moves content down so we can pop it up with animation later */
+    transition: transform 500ms ease;
   }
 
- .card:hover .card-content,
- .card:focus-within .card-content {
-  transform: translateY(0%);
-  transition-delay: 500ms;
- }
+  .card:hover .card-content,
+  .card:focus-within .card-content {
+    transform: translateY(0%);
+    transition-delay: 500ms;
+  }
 
- .card:focus-within .card-content{
+  .card:focus-within .card-content {
     transition-duration: 0ms; /*not sure if this is needed for chrome*/
-    }
+  }
 
- .card-content > *:not(.card-title){
-    opacity:0;
+  .card-content > *:not(.card-title) {
+    opacity: 0;
     transition: opacity 500ms linear;
-    }
+  }
 
- .card:hover .card-content > *,
- .card:focus-within .card-content > * {
+  .card:hover .card-content > *,
+  .card:focus-within .card-content > * {
     opacity: 1;
     transition-delay: 700ms;
-}
- .card-title::after{
-   box-sizing: border-box;
-   transform: scaleX(0);
   }
-
+  .card-title::after {
+    box-sizing: border-box;
+    transform: scaleX(0);
+  }
 }
