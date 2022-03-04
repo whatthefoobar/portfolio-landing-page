@@ -2,7 +2,7 @@
   background-color: $color-grey;
 
   &__title {
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 500;
     margin-bottom: 20px;
     color: $accent-color;
@@ -33,7 +33,6 @@
 
     & .card {
       color: $secondary-color;
-      // background-image: url(../img/img1.jpeg);
       background-size: cover;
       //   height: 400px;
       padding: 10rem 0 0;

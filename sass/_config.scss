@@ -1,12 +1,11 @@
 $primary-color: #272727;
 $secondary-color: #eee;
-$accent-color:#e2eb86;
-$accent-color--1:#b4cc4e;
-$accent-color--2:#277647;
+$accent-color: #e2eb86;
+$accent-color--1: #b4cc4e;
+$accent-color--2: #277647;
 
 $color-grey: #363535;
 $padding: 1.5rem;
-
 
 * {
   box-sizing: border-box;
@@ -14,35 +13,40 @@ $padding: 1.5rem;
   padding: 0;
   text-decoration: none;
   list-style: none;
+}
 
-  }
+html {
+  font-size: 62.5%;
+}
 
-  html{
-    font-size: 62.5%;
-  }
+body {
+  background-color: $primary-color;
+  // height: 100vh;
+  color: $secondary-color;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.7rem;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
 
-  body{
-    background-color: $primary-color;
-    // height: 100vh;
-    color: $secondary-color;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.7rem;
-    width: 100%;
-    min-height: 100vh;
-    overflow-x: hidden;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
 
-  h1, h2, h3, h4, h5, h6{
-    font-family: 'Poppins', sans-serif;
-  }
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4rem;
+}
 
-  p{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.6rem;
-  }
-
-  img {max-width:100%;}
-
+img {
+  max-width: 100%;
+}
 
 @mixin transition-ease {
   transition: all 0.5s ease-in-out; /*to be reused that is why it is all*/
@@ -67,22 +71,24 @@ $padding: 1.5rem;
 
 // Managing all our breakpoints in this map
 
-$bp : (
-  mobile : 480px,
-  tablet : 768px,
-  laptop : 1024px,
-  desktop : 1440px,
+$bp: (
+  mobile: 480px,
+  tablet: 768px,
+  laptop: 1024px,
+  desktop: 1440px,
 );
 
 // Conditional Media query Mixins
-// To save time 
+// To save time
 
 //desktop first (for nav at least)
 
-@mixin query($screen){
-  @each $key, $value in $bp{
-    @if ($screen == $key){
-      @media (max-width : $value){@content;}
+@mixin query($screen) {
+  @each $key, $value in $bp {
+    @if ($screen == $key) {
+      @media (max-width: $value) {
+        @content;
+      }
     }
   }
 }
