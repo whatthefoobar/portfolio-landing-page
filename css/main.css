@@ -794,7 +794,8 @@ img {
   display: block;
 }
 
-.three, .four {
+.three,
+.four {
   position: relative;
   min-height: 500px;
   padding: 7rem 15vh;
@@ -802,7 +803,8 @@ img {
   margin-top: 5vh;
 }
 
-.three h1, .four h1 {
+.three h1,
+.four h1 {
   padding: 2rem;
 }
 
@@ -940,9 +942,9 @@ img {
 }
 
 .main-intro__text {
-  -webkit-box-flex: 3;
-      -ms-flex-positive: 3;
-          flex-grow: 3;
+  -webkit-box-flex: 6;
+      -ms-flex-positive: 6;
+          flex-grow: 6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1055,7 +1057,7 @@ img {
 }
 
 .main-intro__text .social-media a::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -1085,14 +1087,14 @@ img {
 }
 
 .main-intro__image {
-  -webkit-box-flex: 6;
-      -ms-flex-positive: 6;
-          flex-grow: 6;
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
   padding: 16rem;
-  background: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.8))), url("../img/portfolio-img-small.jpg") center top;
-  background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("../img/portfolio-img-small.jpg") center top;
-  background-size: cover;
-  background-position: center;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.8))), url("../img/me2.jpg") center left;
+  background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("../img/me2.jpg") center left;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .wave1path {
