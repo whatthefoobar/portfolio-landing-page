@@ -1,5 +1,5 @@
 .about {
-  background-color: $color-grey;
+  background-color: $primary-color-transparent;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -8,9 +8,9 @@
   gap: 4rem;
   // align-items: flex-start;
   min-height: 500px;
-  padding: 7rem 0;
+  padding: 2rem 0;
   border: none;
-  margin-top: 5vh;
+  margin-top: 3vh;
 
   &__container {
     display: flex;
@@ -33,13 +33,13 @@
   }
 
   &__skills {
+    margin-bottom: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
     //  width: calc(100% - 30rem - 40px );
-    max-width: 1600px;
-    // min-width: 500px;
+    // max-width: 600px;
     gap: 40px;
     margin: 0 15rem;
     flex-shrink: 1;

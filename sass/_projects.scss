@@ -1,5 +1,7 @@
 .projects {
-  background-color: $color-grey;
+  background-color: $primary-color-transparent;
+  padding: 50px 0;
+  margin-top: 3vh;
 
   &__title {
     font-size: 26px;
@@ -18,7 +20,7 @@
 
     & .container {
       position: relative;
-      max-width: 1200px;
+      max-width: 1300px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -35,7 +37,7 @@
       color: $secondary-color;
       background-size: cover;
       //   height: 400px;
-      padding: 10rem 0 0;
+      padding: 5rem 0 0;
       max-width: 24ch; /* 35 characters wide responsive to font size */
       border-radius: 0.5rem;
       overflow: hidden; /* solves the square corners on bottom from the overlay*/
@@ -71,7 +73,7 @@
 
         &::after {
           box-sizing: border-box;
-          content: "";
+          content: '';
           position: absolute;
           height: 4px;
           left: calc(

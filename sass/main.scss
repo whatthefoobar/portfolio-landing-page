@@ -8,129 +8,76 @@
   display: block;
 }
 
-.three,
-.four {
-  position: relative;
-  // display: flex;
-  // flex-direction: column;
-  // align-items: flex-start;
-  min-height: 500px;
-  padding: 7rem 15vh;
-  border: none;
-  margin-top: 5vh;
-
-  h1 {
-    padding: 2rem;
-  }
-}
-
-.wave1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-
-  & svg {
-    position: relative;
-    display: block;
-    width: calc(104% + 1.3px);
-    height: 43px;
-  }
-  & .shape-fill {
-    fill: $primary-color;
-  }
-}
-
-.wave1path {
-  stroke-dasharray: 2545;
-  stroke-dashoffset: -2545;
-
-  animation: wave1 2s infinite;
-}
-
-@keyframes wave1 {
-  from {
-    stroke-dashoffset: 0;
-  }
-  to {
-    stroke-dashoffset: 2545;
-  }
-}
-
-.wave2 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-
-  & svg {
-    position: relative;
-    display: block;
-    width: calc(104% + 1.3px);
-    height: 62px;
-  }
-  & .shape-fill {
-    fill: $primary-color;
-  }
-}
-
 .main {
-  max-width: 1100px;
-  width: 85%;
+  width: 1100px;
+  max-width: 85%;
   margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  margin-top: 2vw;
-  // padding-bottom: 7vw;
 
-  @include query(tablet) {
-    padding-left: 5rem;
-  }
-  @include query(mobile) {
-    width: 100%;
-    padding-bottom: 0;
-  }
+  // @include query(lg-tablet) {
+  //   width: 1100px;
+  //   max-width: 65%;
+  // }
 
   &-intro {
-    width: 100%;
-    display: flex;
-    flex-direction: row wrap;
-    gap: 1rem;
+    max-width: 1100px;
+    margin: 10vh auto;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
 
-    @include query(tablet) {
-      gap: 2rem;
+    @include query(lg-tablet) {
+      display: block;
     }
+    // @include query(tablet) {
+    //   flex-direction: column-reverse;
+    // }
 
-    @include query(tablet) {
-      flex-direction: column-reverse;
+    // @include query(mobile) {
+    //   flex-direction: column-reverse;
+    //   gap: 0;
+    // }
+    &__image {
+      // @include query(lg-tablet) {
+      //   height: 50%;
+      // }
+      & img {
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 5px;
+        background-position: center top;
+      }
     }
-
-    @include query(mobile) {
-      flex-direction: column-reverse;
-      gap: 0;
-    }
-
     &__text {
-      // border: 2px solid orangered;
-      // flex-basis: 55%;
-      flex-grow: 6;
       display: flex;
       justify-items: center;
       align-items: center;
-      padding: 12rem 0;
 
-      @include query(tablet) {
-        padding: 7rem 1rem 0 1rem;
+      @include query(lg-tablet) {
+        position: relative;
+        background-color: rgba(51, 51, 51, 0.4);
+        border: 3px solid $accent-color;
+        margin-block-start: -32vh;
+        margin-inline-start: 4vh;
+        padding: 2rem;
+        z-index: 10;
+      }
+      @include query(sm-tablet) {
+        position: relative;
+        background-color: rgba(51, 51, 51, 0.4);
+
+        border: 3px solid $accent-color;
+        margin-block-start: -25vh;
+        margin-inline-start: 4vh;
+        padding: 2rem;
+        z-index: 10;
       }
 
       @include query(mobile) {
-        padding: 5rem 1rem;
+        border: 3px solid $accent-color;
+        padding: 2rem 1rem;
       }
       .main__highlight {
         font-size: 2.5rem;
@@ -172,7 +119,7 @@
       }
       .main__description {
         font-size: 1.4rem;
-        font-weight: 100;
+        font-weight: 600;
         letter-spacing: 3px;
       }
       .social-media {
@@ -223,36 +170,5 @@
         }
       }
     }
-    &__image {
-      // flex-basis: 45%;
-      flex-grow: 3;
-      padding: 16rem;
-      // border: 2px solid green;
-      background: linear-gradient(
-          to right bottom,
-          rgba(0, 0, 0, 0.5),
-          rgba(0, 0, 0, 0.8)
-        ),
-        url('../img/me2.jpg') center left;
-      background-size: contain;
-      background-repeat: no-repeat;
-      // background-position: center;
-    }
-  }
-}
-
-.wave1path {
-  stroke-dasharray: 2545;
-  stroke-dashoffset: -2545;
-
-  animation: wave1 2s infinite;
-}
-
-@keyframes wave1 {
-  from {
-    stroke-dashoffset: -2545;
-  }
-  to {
-    stroke-dashoffset: 0;
   }
 }

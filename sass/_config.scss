@@ -1,4 +1,5 @@
 $primary-color: #272727;
+$primary-color-transparent: rgba(39, 39, 39, 0.6);
 $secondary-color: #eee;
 $accent-color: #e2eb86;
 $accent-color--1: #b4cc4e;
@@ -20,10 +21,16 @@ html {
 }
 
 body {
-  background-color: $primary-color;
-  // height: 100vh;
+  background: linear-gradient(
+      to bottom,
+      $primary-color-transparent,
+      $primary-color-transparent
+    ),
+    url('/img/bgimg2.jpeg');
+  background-size: cover;
+
   color: $secondary-color;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.7rem;
   width: 100%;
   min-height: 100vh;
@@ -36,11 +43,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 p {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.4rem;
 }
 
@@ -73,7 +80,9 @@ img {
 
 $bp: (
   mobile: 480px,
+  sm-tablet: 620px,
   tablet: 768px,
+  lg-tablet: 850px,
   laptop: 1024px,
   desktop: 1440px,
 );
