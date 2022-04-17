@@ -12,8 +12,8 @@ html {
 }
 
 body {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(39, 39, 39, 0.6)), to(rgba(39, 39, 39, 0.6))), url("/img/bgimg2.jpeg");
-  background: linear-gradient(to bottom, rgba(39, 39, 39, 0.6), rgba(39, 39, 39, 0.6)), url("/img/bgimg2.jpeg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(39, 39, 39, 0.7)), to(rgba(39, 39, 39, 0.7))), url("/img/bgimg2.jpeg");
+  background: linear-gradient(to bottom, rgba(39, 39, 39, 0.7), rgba(39, 39, 39, 0.7)), url("/img/bgimg2.jpeg");
   background-size: cover;
   color: #eee;
   font-family: 'Poppins', sans-serif;
@@ -110,7 +110,6 @@ img {
 }
 
 .about {
-  background-color: rgba(39, 39, 39, 0.6);
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -159,6 +158,10 @@ img {
   font-weight: 500;
   margin-bottom: 20px;
   color: #e2eb86;
+}
+
+.about__text p {
+  font-size: 1.6rem;
 }
 
 .about__skills {
@@ -398,16 +401,19 @@ img {
 }
 
 .projects {
-  background-color: rgba(39, 39, 39, 0.6);
   padding: 50px 0;
   margin-top: 3vh;
 }
 
 .projects__title {
-  font-size: 26px;
+  font-size: 2.6rem;
   font-weight: 500;
   margin-bottom: 20px;
   color: #e2eb86;
+}
+
+.projects__text p {
+  font-size: 1.6rem;
 }
 
 .projects__container {
@@ -810,16 +816,27 @@ img {
   display: -ms-grid;
   display: grid;
   gap: 3rem;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (max-width: 850px) {
   .main-intro {
-    display: block;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-intro {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 
@@ -856,17 +873,10 @@ img {
   }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 768px) {
   .main-intro__text {
-    position: relative;
-    background-color: rgba(51, 51, 51, 0.4);
-    border: 3px solid #e2eb86;
-    -webkit-margin-before: -25vh;
-            margin-block-start: -25vh;
-    -webkit-margin-start: 4vh;
-            margin-inline-start: 4vh;
-    padding: 2rem;
-    z-index: 10;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 
@@ -886,10 +896,17 @@ img {
   color: #f2f6c8;
 }
 
+@media (max-width: 768px) {
+  .main-intro__text .main__highlight {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+}
+
 @media (max-width: 480px) {
   .main-intro__text .main__highlight {
-    font-size: 2.2rem;
-    font-weight: 400;
+    font-size: 1.8rem;
+    font-weight: 600;
   }
 }
 
@@ -932,7 +949,7 @@ img {
 }
 
 .main-intro__text .main__description {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 600;
   letter-spacing: 3px;
 }

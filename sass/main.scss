@@ -13,25 +13,21 @@
   max-width: 85%;
   margin: 0 auto;
 
-  // @include query(lg-tablet) {
-  //   width: 1100px;
-  //   max-width: 65%;
-  // }
-
   &-intro {
     max-width: 1100px;
     margin: 10vh auto;
     display: grid;
     gap: 3rem;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
+    justify-content: center;
 
     @include query(lg-tablet) {
-      display: block;
+      grid-template-columns: 1fr;
     }
-    // @include query(tablet) {
-    //   flex-direction: column-reverse;
-    // }
+    @include query(tablet) {
+      grid-template-columns: 1fr;
+    }
 
     // @include query(mobile) {
     //   flex-direction: column-reverse;
@@ -64,16 +60,19 @@
         padding: 2rem;
         z-index: 10;
       }
-      @include query(sm-tablet) {
-        position: relative;
-        background-color: rgba(51, 51, 51, 0.4);
-
-        border: 3px solid $accent-color;
-        margin-block-start: -25vh;
-        margin-inline-start: 4vh;
-        padding: 2rem;
-        z-index: 10;
+      @include query(tablet) {
+        grid-template-columns: 1fr;
       }
+      // @include query(sm-tablet) {
+      //   position: relative;
+      //   background-color: rgba(51, 51, 51, 0.4);
+
+      //   border: 3px solid $accent-color;
+      //   margin-block-start: -25vh;
+      //   margin-inline-start: 4vh;
+      //   padding: 2rem;
+      //   z-index: 10;
+      // }
 
       @include query(mobile) {
         border: 3px solid $accent-color;
@@ -87,9 +86,14 @@
         & span {
           color: lighten($accent-color, 15%);
         }
+        @include query(tablet) {
+          font-size: 2rem;
+          font-weight: 600;
+          // text-indent: 0;
+        }
         @include query(mobile) {
-          font-size: 2.2rem;
-          font-weight: 400;
+          font-size: 1.8rem;
+          font-weight: 600;
           // text-indent: 0;
         }
       }
@@ -118,7 +122,7 @@
         }
       }
       .main__description {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         font-weight: 600;
         letter-spacing: 3px;
       }

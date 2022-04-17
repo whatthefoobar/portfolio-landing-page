@@ -1,5 +1,5 @@
 .about {
-  background-color: $primary-color-transparent;
+  // background-color: $primary-color-transparent;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -29,6 +29,9 @@
       font-weight: 500;
       margin-bottom: 20px;
       color: $accent-color;
+    }
+    & p {
+      font-size: 1.6rem;
     }
   }
 
