@@ -131,7 +131,7 @@
 @media (hover) {
   .card-content {
     transform: translateY(
-      65%
+      75%
     ); /* moves content down so we can pop it up with animation later */
     transition: transform 500ms ease;
   }

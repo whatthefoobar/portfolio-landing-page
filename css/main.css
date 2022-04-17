@@ -557,8 +557,8 @@ img {
 
 @media (hover) {
   .card-content {
-    -webkit-transform: translateY(65%);
-            transform: translateY(65%);
+    -webkit-transform: translateY(75%);
+            transform: translateY(75%);
     /* moves content down so we can pop it up with animation later */
     -webkit-transition: -webkit-transform 500ms ease;
     transition: -webkit-transform 500ms ease;
@@ -812,7 +812,7 @@ img {
 
 .main-intro {
   max-width: 1100px;
-  margin: 10vh auto;
+  margin: 5vh auto;
   display: -ms-grid;
   display: grid;
   gap: 3rem;
