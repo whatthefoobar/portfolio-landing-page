@@ -18,6 +18,12 @@
     <script src="https://use.fontawesome.com/a375b7298d.js"></script>
 
     <link rel="stylesheet" href="./css/main.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
     <title>My portfolio page</title>
   </head>
   <body>
@@ -30,9 +36,6 @@
       <button class="tablinks" onclick="openTab(event, 'Projects')">
         Projects
       </button>
-      <!-- <button class="tablinks" onclick="openTab(event, 'Contact')">
-        Contact
-      </button> -->
     </div>
 
     <!-- Home/main page tab -->
@@ -194,170 +197,74 @@
             </p>
           </div>
 
-          <div class="container">
-            <div class="card" style="background-image: url('./img/img1.jpeg')">
-              <div class="card-content">
-                <div class="card-title">Artist landing page</div>
-                <p class="card-body">My first take on a landing page.</p>
-                <a href="https://hi-01-artist-page.netlify.app/" class="button"
-                  >Learn more</a
-                >
+          <div class="wrapper">
+            <div class="slider owl-carousel">
+              <div class="card">
+                <div class="img">
+                  <img src="img/p1.jpg" alt="project" />
+                </div>
+                <div class="content">
+                  <div class="title">Artist landing page</div>
+                  <div class="sub-title">My first take on a landing page.</div>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Quia distinctio vero asperiores delectus at tempora, quas
+                    architecto dicta ducimus placeat.
+                  </p>
+                  <div class="btn"><button>Read more</button></div>
+                </div>
               </div>
-            </div>
 
-            <div class="card" style="background-image: url('./img/img2.jpeg')">
-              <div class="card-content">
-                <div class="card-title">Zodiac quizz app</div>
-                <p class="card-body">
-                  A form app that takes in your birthday and returns your age in
-                  years months days , your zodiac sign and a random serial
-                  killer that shares the same zodiac as you.
-                </p>
-                <a
-                  href="https://github.com/whatthefoobar/zodiac-project"
-                  class="button"
-                  >Learn more</a
-                >
+              <div class="card">
+                <div class="img">
+                  <img src="img/p2.jpg" alt="project" />
+                </div>
+                <div class="content">
+                  <div class="title">Zodiac quizz app</div>
+                  <div class="sub-title">
+                    Deeper dive into Javascript and localStorage
+                  </div>
+                  <p>
+                    A form app that takes in your birthday and returns your age
+                    in years months days , your zodiac sign and a random serial
+                    killer that shares the same zodiac as you.
+                  </p>
+                  <div class="btn"><button>Read more</button></div>
+                </div>
               </div>
-            </div>
 
-            <div class="card" style="background-image: url('./img/img3.jpeg')">
-              <div class="card-content">
-                <div class="card-title">News app</div>
-                <p class="card-body">
-                  React news app project using New York Times Api.
-                </p>
-                <a
-                  href="https://news-app-react-hi-project.netlify.app"
-                  class="button"
-                  >Learn more</a
-                >
+              <div class="card">
+                <div class="img">
+                  <img src="img/p3.jpg" alt="project" />
+                </div>
+                <div class="content">
+                  <div class="title">News app</div>
+                  <div class="sub-title">React news app</div>
+                  <p>React news app project using New York Times Api.</p>
+                  <div class="btn"><button>Read more</button></div>
+                </div>
               </div>
-            </div>
 
-            <div class="card" style="background-image: url('./img/img4.jpeg')">
-              <div class="card-content">
-                <div class="card-title">RPG Caves game</div>
-                <p class="card-body">
-                  A top-down RPG style game, the concept inspired by Squid Games
-                  requires the player to select between caves, some of which are
-                  safe, others lead to player death.
-                </p>
-                <a
-                  href="https://harry-yates.github.io/PhaserGame-RPG-Caves/"
-                  class="button"
-                  >Learn more</a
-                >
+              <div class="card">
+                <div class="img">
+                  <img src="img/p4s.jpg" alt="project" />
+                </div>
+                <div class="content">
+                  <div class="title">RPG Caves game</div>
+                  <div class="sub-title">Phaser game</div>
+                  <p>
+                    A top-down RPG style game, the concept inspired by Squid
+                    Games requires the player to select between caves, some of
+                    which are safe, others lead to player death.
+                  </p>
+                  <div class="btn"><button>Read more</button></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
     </div>
-
-    <!-- Contact form tab -->
-
-    <!-- <div id="Contact" class="tabcontent">
-      <section class="four contact">
-        <div class="wave1">
-          <svg
-            data-name="Layer 1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-              class="shape-fill"
-            ></path>
-          </svg>
-        </div>
-
-        <div class="content">
-          <h2 class="contact__title">Contact Me</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
-            pariatur iure dolorem eligendi natus iusto aspernatur amet molestias
-            et quae officiis magnam impedit corporis eum rem, cupiditate id
-            voluptatem vero!
-          </p>
-        </div>
-        <div class="container">
-          <div class="contactInfo">
-            <div class="box">
-              <div class="icon">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-              </div>
-              <div class="text">
-                <h3>Address</h3>
-                <p>
-                  4683 Private Lane, <br />
-                  Albany Georgia, <br />
-                  31701
-                </p>
-              </div>
-            </div>
-
-            <div class="box">
-              <div class="icon">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-              </div>
-              <div class="text">
-                <h3>Phone</h3>
-                <p>229-280-6694</p>
-              </div>
-            </div>
-
-            <div class="box">
-              <div class="icon">
-                <i class="fa fa-envelope-o" aria-hidden="true"></i>
-              </div>
-              <div class="text">
-                <h3>Email</h3>
-                <p>bussiness@temporary-mail.net</p>
-              </div>
-            </div>
-          </div>
-          <div class="contactForm">
-            <form>
-              <h2>Send Message</h2>
-              <div class="inputBox">
-                <label for=""></label>
-                <input type="text" required="required" class="name" />
-                <span>Full name</span>
-              </div>
-              <div class="inputBox">
-                <label for=""></label>
-                <input type="text" required="required" class="email" />
-                <span>Email</span>
-              </div>
-              <div class="inputBox">
-                <label for=""></label>
-                <textarea required="required" class="message"></textarea>
-                <span>Type your message</span>
-              </div>
-              <div class="inputBox">
-                <input type="submit" value="Send" />
-              </div>
-            </form>
-          </div>
-        </div>
-
-        <div class="wave2">
-          <svg
-            data-name="Layer 1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-              class="shape-fill"
-            ></path>
-          </svg>
-        </div>
-      </section>
-    </div> -->
 
     <script
       src="https://kit.fontawesome.com/c0f45b7229.js"
