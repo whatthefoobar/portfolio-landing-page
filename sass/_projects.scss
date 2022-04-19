@@ -67,6 +67,11 @@
             font-size: 1.6rem;
           }
 
+          .btns {
+            display: flex;
+            justify-content: space-evenly;
+          }
+
           & .btn {
             display: block;
             text-align: left;
