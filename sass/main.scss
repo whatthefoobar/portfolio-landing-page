@@ -45,7 +45,12 @@
       justify-items: center;
       align-items: center;
 
+      @include query(laptop) {
+        width: 100%;
+      }
+
       @include query(lg-tablet) {
+        width: 90%;
         height: 350px;
         position: relative;
         background-color: rgba(51, 51, 51, 0.4);

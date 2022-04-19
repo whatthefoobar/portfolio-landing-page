@@ -808,8 +808,15 @@ img {
           align-items: center;
 }
 
+@media (max-width: 1024px) {
+  .main-intro__text {
+    width: 100%;
+  }
+}
+
 @media (max-width: 850px) {
   .main-intro__text {
+    width: 90%;
     height: 350px;
     position: relative;
     background-color: rgba(51, 51, 51, 0.4);
