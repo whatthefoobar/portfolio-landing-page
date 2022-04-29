@@ -38,122 +38,66 @@
   }
 
   &__skills {
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    //  width: calc(100% - 30rem - 40px );
-    // max-width: 600px;
-    gap: 4rem;
-    margin: 0 15rem;
-    flex-shrink: 1;
+    margin: 0 auto;
+    display: grid;
+    width: 75%;
+    gap: 16px;
+    padding: 16px;
+    max-width: 1024px;
 
-    &--hard-skills,
-    &--soft-skills {
-      flex-grow: 1;
-      min-width: 350px;
+    & .set {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 24px;
+      border-radius: 16px;
+      cursor: pointer;
 
-      @include query(tablet) {
-        max-width: 400px;
+      &:hover {
+        box-shadow: 0px 12px 16px #36363624;
       }
-    }
+      & span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        font-size: 48px;
+        background-color: #b9c441;
+        color: #fff;
+        border-radius: 35%;
+        margin-inline: auto;
+      }
 
-    &__title {
-      margin-bottom: 15px;
-      color: $accent-color;
-      text-align: center;
-    }
-    .progress {
-      background-color: #d8d8d8;
-      border-radius: 20px;
-      // height:12px;
-      font-size: 10px;
-      // width:550px;
-      margin: 7px 0;
-    }
+      & > header {
+        padding-block: 24px;
+        font-size: 2.4rem;
+        color: #b9c441;
+        text-align: center;
+        text-transform: capitalize;
+      }
 
-    .p10 {
-      @include progress-done;
-      width: 10%;
-      animation: p10bar 2s linear forwards;
+      & .list {
+        padding-block: 8px;
+        display: grid;
+        grid-template-columns: 1fr 28px;
+        color: #888;
+        text-transform: uppercase;
+        font-size: 1.6rem;
+      }
+      &:hover .list {
+        color: #363636;
+        font-weight: 600;
+      }
     }
-    .p20 {
-      @include progress-done;
-      width: 20%;
-      animation: p20bar 2s linear forwards;
-    }
-    .p30 {
-      @include progress-done;
-      width: 30%;
-      animation: p30bar 2s linear forwards;
-    }
-    .p40 {
-      @include progress-done;
-      width: 40%;
-      animation: p40bar 2s linear forwards;
-    }
-    .p50 {
-      @include progress-done;
-      width: 50%;
-      animation: p50bar 2s linear forwards;
-    }
-    .p60 {
-      @include progress-done;
-      width: 60%;
-      animation: p60bar 2s linear forwards;
-    }
-    .p70 {
-      @include progress-done;
-      width: 70%;
-      animation: p70bar 2s linear forwards;
-      // animation-delay: 1s;
-    }
-    .p80 {
-      @include progress-done;
-      width: 80%;
-      animation: p80bar 2s linear forwards;
-    }
-    .p90 {
-      @include progress-done;
-      width: 90%;
-      animation: p90bar 2s linear forwards;
-    }
+  }
+}
 
-    @keyframes p60bar {
-      from {
-        width: 0%;
-      }
-      to {
-        width: 60%;
-      }
-    }
-
-    @keyframes p70bar {
-      from {
-        width: 0%;
-      }
-      to {
-        width: 70%;
-      }
-    }
-
-    @keyframes p80bar {
-      from {
-        width: 0%;
-      }
-      to {
-        width: 80%;
-      }
-    }
-
-    @keyframes p90bar {
-      from {
-        width: 0%;
-      }
-      to {
-        width: 90%;
-      }
-    }
+@media screen and (min-width: 600px) {
+  .about__skills {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 600px) {
+  .about__skills {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
