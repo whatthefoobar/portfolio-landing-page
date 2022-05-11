@@ -12,8 +12,8 @@ html {
 }
 
 body {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(39, 39, 39, 0.7)), to(rgba(39, 39, 39, 0.7))), url("../img/bgimg2.jpeg");
-  background: linear-gradient(to bottom, rgba(39, 39, 39, 0.7), rgba(39, 39, 39, 0.7)), url("../img/bgimg2.jpeg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(39, 39, 39, 0.6)), to(rgba(39, 39, 39, 0.6))), url("../img/bgimg2.jpeg");
+  background: linear-gradient(to bottom, rgba(39, 39, 39, 0.6), rgba(39, 39, 39, 0.6)), url("../img/bgimg2.jpeg");
   background-size: cover;
   background-position: center;
   color: #eee;
@@ -171,7 +171,7 @@ img {
 }
 
 .about__skills .set {
-  height: 420px;
+  height: 400px;
   background-color: rgba(255, 255, 255, 0.9);
   padding: 24px;
   border-radius: 16px;
@@ -193,9 +193,9 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 80px;
-  height: 80px;
-  font-size: 48px;
+  width: 60px;
+  height: 60px;
+  font-size: 40px;
   background-color: #b9c441;
   color: #fff;
   border-radius: 35%;
