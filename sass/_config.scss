@@ -1,5 +1,5 @@
 $primary-color: #272727;
-$primary-color-transparent: rgba(39, 39, 39, 0.6);
+$primary-color-transparent: rgba(39, 39, 39, 0.5);
 $secondary-color: #eee;
 $accent-color: #e2eb86;
 $accent-color--1: #b4cc4e;
@@ -26,7 +26,7 @@ body {
       $primary-color-transparent,
       $primary-color-transparent
     ),
-    url('../img/bgimg2.jpeg');
+    url('../img/bgimg4.jpeg');
   background-size: cover;
   background-position: center;
   color: $secondary-color;
