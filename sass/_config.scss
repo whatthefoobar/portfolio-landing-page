@@ -26,9 +26,9 @@ body {
       $primary-color-transparent,
       $primary-color-transparent
     ),
-    url('../img/bgimg4.jpeg');
+    url('../img/bgimg4.jpeg') center no-repeat fixed;
   background-size: cover;
-  background-position: center;
+  // background-position: center;
   color: $secondary-color;
   font-family: 'Poppins', sans-serif;
   // font-size: 1.7rem;
